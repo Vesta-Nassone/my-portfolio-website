@@ -1,13 +1,14 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
+import Navbar from "./Navbar.js";
 
 function App() {
   return (
     <div className="app">
-      <div className="pattern-zigzag-lg">
+      <Navbar/>
+      {/* <div className="pattern-zigzag-lg benzo">
         <img src={logo} className="App-logo" alt="logo"/>
-      </div>
+      </div> */}
     </div>
   );
 }
