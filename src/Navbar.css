@@ -4,4 +4,11 @@
 .small__screen{
     width: 25% !important
 }
-.sidebar{height:100%;width:100px;background-color:rgb(223, 51, 51);position:fixed!important;z-index:1;overflow:auto}
+.sidebar{
+    height:100%;
+    width:100px;
+    background-color:rgb(44, 127, 236);
+    position:fixed!important;
+    z-index:1;
+    overflow:auto
+}
