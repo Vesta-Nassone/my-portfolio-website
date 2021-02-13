@@ -1,17 +1,23 @@
-// import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./Navbar.js";
-import Header from "./Header.js";
+import Home from "./Home.js";
+import Contact from "./Contact.js";
+import './App.css'
 
 function App() {
   return (
-    <div className="app">
-      <Navbar/>
-      <Header/>
-      {/* <div className="pattern-zigzag-lg benzo">
-        <img src={logo} className="App-logo" alt="logo"/>
-  </div> */}
-    </div>
+    <React.Fragment>
+      <div className="App">
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/contact" component={Contact} />
+          </Switch>
+        </Router>
+      </div>
+    </React.Fragment>
   );
 }
 
