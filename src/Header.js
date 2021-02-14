@@ -1,24 +1,63 @@
-import React, { Component } from 'react'
-import logo from './logo.svg';
-import banner from './banner.png';
+import React from "react";
+import Typography from "@material-ui/core/Typography";
+import Avatar from "@material-ui/core/Avatar";
+import Grid from "@material-ui/core/Grid";
+import Box from "@material-ui/core/Box";
+import Typed from "react-typed";
+import { makeStyles } from "@material-ui/core/styles";
+import avatar from "./avatar.jpg";
 
-export default class Header extends Component {
-    render() {
-        return (
-            <div>
-                <div id="main" className="w3-padding-small w3-grey" style={{
-                    width:"100%",
-                    height:"200px"
-                }}>
-                    {/*Header/Home */}
-                    {/* <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-                        <img
-                            src={banner}
-                            alt="my image"
-                            class="w3-image header__image"/>
-                    </header> */}
-                </div>  
-            </div>
-        )
-    }
-}
+const useStyles = makeStyles((theme) => ({
+    avatar: {
+        width: theme.spacing(15),
+        height: theme.spacing(15),
+        margin: theme.spacing(1),
+    },
+    title: {
+        color: "red",
+    },
+    subtitle: {
+        color: "black",
+        textTransform: "uppercase",
+    },
+    typedContainer: {
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%,-50%)",
+        width: "100vw",
+        textAlign: "center",
+        zIndex: 1,
+    },
+}));
+
+const Header = () => {
+    const classes = useStyles();
+
+    return (
+        <Box className={classes.typedContainer}>
+            <Grid container justify="center">
+                <Avatar className={classes.avatar} src={avatar} alt="Vesta Nassone" />
+            </Grid>
+            <Typography className={classes.title} variant="h4">
+                Hi I am <br></br>
+                <Typed strings={["Benedito Vesta Nassone"]} typeSpeed={40} />
+            </Typography>
+
+            <Typography className={classes.subtitle} variant="h5">
+                <Typed
+                    strings={[
+                        "Frontend Developer",
+                        "Backend Developer",
+                        "Android App Developer",
+                    ]}
+                    typeSpeed={40}
+                    backSpeed={50}
+                    loop
+                />
+            </Typography>
+        </Box>
+    );
+};
+
+export default Header;
