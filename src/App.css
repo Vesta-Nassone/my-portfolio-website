@@ -1,5 +1,6 @@
 body {
-    background: url(bg.jpg) no-repeat center center fixed;
+    background: url('https://i.imgur.com/qdmgYYA.jpg') no-repeat center center fixed;
+    /* background: url(bg.jpg) no-repeat center center fixed; */
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;

@@ -5,103 +5,79 @@ import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-
+import "./Contact.css";
+import Facebook from "@material-ui/icons/Facebook";
+import Twitter from "@material-ui/icons/Twitter";
+import Instagram from "@material-ui/icons/Instagram";
+import IconButton from '@material-ui/core/IconButton';
 import Send from "@material-ui/icons/Send";
+import { FaFacebook, FaTwitter, FaGithub, FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
-const useStyles = makeStyles((theme) => ({
-  contactContainer: {
-    background: "#233",
-    height: "100vh",
-  },
-  heading: {
-    color: "tomato",
-    textAlign: "center",
-    textTransform: "uppercase",
-    marginBottom: "1rem",
-  },
-  form: {
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    position: "absolute",
-  },
-  input: {
-    color: "#fff",
-  },
-  button: {
-    marginTop: "1rem",
-    color: "tomato",
-    borderColor: "tan",
-  },
-  field: {
-    margin: "1rem 0rem",
-  },
-}));
-
-const InputField = withStyles({
-  root: {
-    "& label.Mui-focused": {
-      color: "tomato",
-    },
-    "& label": {
-      color: "tan",
-    },
-    "& .MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "tan",
-      },
-      "&:hover fieldset": {
-        borderColor: "tan",
-      },
-      "&.Mui-focused fieldset": {
-        color: "#fff",
-        borderColor: "tan",
-      },
-    },
-  },
-})(TextField);
 
 const Contact = () => {
-  const classes = useStyles();
   return (
-    <Box component="div" className={classes.contactContainer}>
-      <Grid container justify="center">
-        <Box component="form" className={classes.form}>
-          <Typography variant="h5" className={classes.heading}>
-            Lets keep in touch..
-          </Typography>
-          <InputField
-            fullWidth={true}
-            label="Name"
-            variant="outlined"
-            inputProps={{ className: classes.input }}
-          />
-          <InputField
-            fullWidth={true}
-            label="Email"
-            variant="outlined"
-            inputProps={{ className: classes.input }}
-            className={classes.field}
-          />
-          <InputField
-            fullWidth={true}
-            label="Message"
-            variant="outlined"
-            multiline
-            rows={4}
-            inputProps={{ className: classes.input }}
-          />
-          <Button
-            variant="outlined"
-            fullWidth={true}
-            endIcon={<Send />}
-            className={classes.button}
-          >
-            Contact Me
-          </Button>
-        </Box>
-      </Grid>
-    </Box>
+    <div className="card">
+      <h1 className="card__heading">Contact Me</h1>
+      <div className="card__images">
+      </div>
+      <ul className="card__numbers">
+        <li className="card__number">+27</li>
+        <li className="card__number">68</li>
+        <li className="card__number">101</li>
+        <li className="card__number">3400</li>
+      </ul>
+      <form action="/action_page.php" target="_blank">
+        <p>
+          <input placeholder="Name" autoComplete="on" className="card__input" />
+        </p>
+        <p>
+          <input placeholder="Email" autoComplete="on" className="card__input" />
+        </p>
+        <p>
+          <input placeholder="Subject" className="card__input" />
+        </p>
+        <p>
+          <input placeholder="Message" className="card__input" />
+        </p>
+        <p>
+          <button className="card__button">Send Message</button>
+        </p>
+      </form>
+      <div>
+        <ul className="card__socialIcons">
+          <li>
+            <IconButton>
+              <FaFacebook size="2em" color="blue" />
+            </IconButton>
+          </li>
+          <li>
+            <IconButton>
+              <FaTwitter size="2em" color="#1DA1F2" />
+            </IconButton>
+          </li>
+          <li>
+            <IconButton>
+              <FaGithub size="2em" color="black" />
+            </IconButton>
+          </li>
+          <li>
+            <IconButton>
+              <FaWhatsapp size="2em" color="green" />
+            </IconButton>
+          </li>
+          <li>
+            <IconButton>
+              <FaInstagram size="2em" color="#fb3958" />
+            </IconButton>
+          </li>
+          <li>
+            <IconButton>
+              <FaLinkedin size="2em" color="#0077B5" />
+            </IconButton>
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 };
 

@@ -98,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(3),
     },
     listItem: {
-        color: "red",
+        color: "black",
     },
     avatar: {
         display: "flex"
@@ -121,65 +121,66 @@ export default function MiniDrawer() {
     const [open, setOpen] = React.useState(false);
 
     const handleClick = () => {
-        open === true ? setOpen(false) : setOpen(true)
-    }
+        open === true ? setOpen(false) : setOpen(true);
+    };
 
     return (
         <React.Fragment>
             <div className={classes.root}>
-                <CssBaseline />
-                <Drawer
-                    variant="permanent"
-                    className={clsx(classes.drawer, {
-                        [classes.drawerOpen]: open,
-                        [classes.drawerClose]: !open,
-                    })}
-                    classes={{
-                        paper: clsx({
+                {/* <CssBaseline /> */}
+                <div className="nav">
+                    <Drawer
+                        variant="permanent"
+                        className={clsx(classes.drawer, {
                             [classes.drawerOpen]: open,
                             [classes.drawerClose]: !open,
-                        }),
-                    }}
-                >
-                    <div className={classes.toolbar}>
-                        <Toolbar>
-                            <IconButton onClick={handleClick}>
-                                <MenuIcon />
-                            </IconButton>
-                        </Toolbar>
-                    </div>
-                    <Divider />
-                    <List className={classes.root}>
-                        <ListItemAvatar>
-                            <Avatar className={classes.avatar}>
-                                VN
-                        </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText
-                            primary={<React.Fragment><img className={classes.rootImage} src={avatar} /></React.Fragment>}
-                            secondary="vestanassone@gmail.com"
-                        />
-                    </List>
-                    <Divider />
-                    <List>
-                        {menuItems.map((item, i) => (
-                            <ListItem
-                                button
-                                key={i}
-                                className={classes.listItem}
-                                component={Link}
-                                to={item.listPath}
-                                onClick={() => setOpen(false)}
-                            >
-                                <ListItemIcon className={classes.listItem}>
-                                    {item.listIcon}
-                                </ListItemIcon>
-                                <ListItemText primary={item.listText} />
-                            </ListItem>
-                        ))}
-                    </List>
-                    <Divider />
-                </Drawer>
+                        })}
+                        classes={{
+                            paper: clsx({
+                                [classes.drawerOpen]: open,
+                                [classes.drawerClose]: !open,
+                            }),
+                        }}
+                    >
+                        <div className={classes.toolbar}>
+                            <Toolbar>
+                                <IconButton onClick={handleClick}>
+                                    <MenuIcon />
+                                </IconButton>
+                            </Toolbar>
+                        </div>
+                        <Divider />
+                        <List className={classes.root}>
+                            {/* <ListItemAvatar>
+                                <Avatar className={classes.avatar}>VN</Avatar>
+                            </ListItemAvatar> */}
+                            <ListItemText
+                                primary={<React.Fragment><img className={classes.rootImage} src={avatar} /></React.Fragment>}
+                                secondary="vestanassone@gmail.com"
+                            />
+                        </List>
+                        <Divider />
+                        <List>
+                            {menuItems.map((item, i) => (
+                                <ListItem
+                                    button
+                                    key={i}
+                                    className={classes.listItem}
+                                    component={Link}
+                                    to={item.listPath}
+                                    onClick={() => setOpen(false)}
+                                >
+                                    <ListItemIcon className={classes.listItem}>
+                                        {item.listIcon}
+                                    </ListItemIcon>
+                                    <ListItemText primary={item.listText} />
+                                </ListItem>
+                            ))}
+                        </List>
+                        <Divider />
+                    </Drawer>
+
+                </div>
             </div>
         </React.Fragment>
     );
