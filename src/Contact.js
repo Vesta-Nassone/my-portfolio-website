@@ -16,7 +16,7 @@ import { FaFacebook, FaTwitter, FaGithub, FaWhatsapp, FaInstagram, FaLinkedin } 
 
 const Contact = () => {
   return (
-    <div className="card">
+    <div className="contact__card">
       <h1 className="card__heading">Contact Me</h1>
       <div className="card__images">
       </div>
