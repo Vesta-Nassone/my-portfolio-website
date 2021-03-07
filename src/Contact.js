@@ -17,10 +17,10 @@ import { FaFacebook, FaTwitter, FaGithub, FaWhatsapp, FaInstagram, FaLinkedin } 
 const Contact = () => {
   return (
     <div className="contact__card">
-      <h1 className="card__heading">Contact Me</h1>
+      <h1 className="card__heading animate-fading">Contact Me</h1>
       <div className="card__images">
       </div>
-      <ul className="card__numbers">
+      <ul className="card__numbers animate-opacity">
         <li className="card__number">+27</li>
         <li className="card__number">68</li>
         <li className="card__number">101</li>
@@ -46,32 +46,32 @@ const Contact = () => {
       <div>
         <ul className="card__socialIcons">
           <li>
-            <IconButton>
+            <IconButton className="social-icon-hover">
               <FaFacebook size="2em" color="blue" />
             </IconButton>
           </li>
           <li>
-            <IconButton>
+            <IconButton className="social-icon-hover">
               <FaTwitter size="2em" color="#1DA1F2" />
             </IconButton>
           </li>
           <li>
-            <IconButton>
+            <IconButton className="social-icon-hover">
               <FaGithub size="2em" color="black" />
             </IconButton>
           </li>
           <li>
-            <IconButton>
+            <IconButton className="social-icon-hover">
               <FaWhatsapp size="2em" color="green" />
             </IconButton>
           </li>
           <li>
-            <IconButton>
+            <IconButton className="social-icon-hover">
               <FaInstagram size="2em" color="#fb3958" />
             </IconButton>
           </li>
           <li>
-            <IconButton>
+            <IconButton className="social-icon-hover">
               <FaLinkedin size="2em" color="#0077B5" />
             </IconButton>
           </li>

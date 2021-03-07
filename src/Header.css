@@ -1,9 +1,10 @@
 .header__card {
+  max-width: 50vw;
     position: relative;
     width: auto;
     height: auto;
-    top: 50px;
-    bottom: 50px;
+    top: 100px;
+    right: -500px;
     padding: 2em;
     font-family: 'Courier Prime', mono;
     color: #fff;
@@ -13,4 +14,5 @@
     border-color: #fff8 transparent transparent #fff8;
     border-radius: 1em;
     box-shadow: 1em 1em .5em #0008;
+    cursor: pointer;
   }
