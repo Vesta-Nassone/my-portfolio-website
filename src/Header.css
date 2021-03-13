@@ -1,5 +1,6 @@
 .header__card {
-  max-width: 60vw;
+  max-width: 100vw;
+  max-height: 100vh;
     position: fixed;
     width: auto;
     height: auto;
