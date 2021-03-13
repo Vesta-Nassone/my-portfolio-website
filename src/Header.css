@@ -1,10 +1,8 @@
 .header__card {
-  max-width: 50vw;
-    position: relative;
+  max-width: 60vw;
+    position: fixed;
     width: auto;
     height: auto;
-    top: 100px;
-    right: -500px;
     padding: 2em;
     font-family: 'Courier Prime', mono;
     color: #fff;
@@ -15,4 +13,8 @@
     border-radius: 1em;
     box-shadow: 1em 1em .5em #0008;
     cursor: pointer;
+  }
+  .social__icons{
+    display: flex;
+    overflow: auto;
   }

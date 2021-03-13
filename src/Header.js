@@ -9,7 +9,6 @@ import avatar from "./avatar.jpg";
 import "./Header.css";
 import { FaFacebook, FaTwitter, FaGithub, FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import IconButton from '@material-ui/core/IconButton';
-import styled from 'styled-components';
 import { useSpring, animated, config } from 'react-spring';
 
 const useStyles = makeStyles((theme) => ({
@@ -26,8 +25,8 @@ const useStyles = makeStyles((theme) => ({
         textTransform: "uppercase",
     },
     typedContainer: {
-        width: "400px",
-        height: "250px",
+        width: "auto",
+        height: "auto",
         textAlign: "center",
         zIndex: 1,
     },
@@ -53,8 +52,8 @@ const Header = () => {
                     <Avatar className={classes.avatar} src={avatar} alt="Vesta Nassone" />
                 </Grid>
                 <Typography className={classes.title} variant="h4">
-                    Hi I am <br></br>
-                    <Typed strings={["Benedito Vesta Nassone"]} typeSpeed={40} />
+                    Hi<span>👋🏾</span> I am <br></br>
+                    <Typed strings={["Vesta Nassone"]} typeSpeed={40} />
                 </Typography>
                 <Typography className={classes.subtitle} variant="h5">
                     <Typed
@@ -62,47 +61,49 @@ const Header = () => {
                             "Frontend Developer",
                             "Backend Developer",
                             "Android App Developer",
+                            "AWS Enthusiast",
+                            "Cyber Security Hobbyist"
                         ]}
                         typeSpeed={40}
                         backSpeed={50}
                         loop
                     />
                 </Typography>
+                <div className="social__icons">
+                    <ul className="card__socialIcons">
+                        <li>
+                            <IconButton className="social-icon-hover">
+                                <FaFacebook size="2em" color="blue" />
+                            </IconButton>
+                        </li>
+                        <li>
+                            <IconButton className="social-icon-hover">
+                                <FaTwitter size="2em" color="#1DA1F2" />
+                            </IconButton>
+                        </li>
+                        <li>
+                            <IconButton className="social-icon-hover">
+                                <FaGithub size="2em" color="black" />
+                            </IconButton>
+                        </li>
+                        <li>
+                            <IconButton className="social-icon-hover">
+                                <FaWhatsapp size="2em" color="green" />
+                            </IconButton>
+                        </li>
+                        <li>
+                            <IconButton className="social-icon-hover">
+                                <FaInstagram size="2em" color="#fb3958" />
+                            </IconButton>
+                        </li>
+                        <li>
+                            <IconButton className="social-icon-hover">
+                                <FaLinkedin size="2em" color="#0077B5" />
+                            </IconButton>
+                        </li>
+                    </ul>
+                </div>
             </Box>
-            <div>
-                <ul className="card__socialIcons">
-                    <li>
-                        <IconButton>
-                            <FaFacebook size="2em" color="blue" />
-                        </IconButton>
-                    </li>
-                    <li>
-                        <IconButton>
-                            <FaTwitter size="2em" color="#1DA1F2" />
-                        </IconButton>
-                    </li>
-                    <li>
-                        <IconButton>
-                            <FaGithub size="2em" color="black" />
-                        </IconButton>
-                    </li>
-                    <li>
-                        <IconButton>
-                            <FaWhatsapp size="2em" color="green" />
-                        </IconButton>
-                    </li>
-                    <li>
-                        <IconButton>
-                            <FaInstagram size="2em" color="#fb3958" />
-                        </IconButton>
-                    </li>
-                    <li>
-                        <IconButton>
-                            <FaLinkedin size="2em" color="#0077B5" />
-                        </IconButton>
-                    </li>
-                </ul>
-            </div>
         </animated.div>
     );
 };

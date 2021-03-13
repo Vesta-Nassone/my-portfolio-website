@@ -1,16 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Iceland&display=swap');
 
-body {
-  min-height: 50vh;
-  display:inline-block;
-  place-items: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Iceland&display=swap');
 
 .contact__card {
   position: fixed;
   width: auto;
   height: auto;
-  right: 500px;
   padding: 2em;
   font-family: 'Courier Prime', mono;
   color: #fff;

@@ -1,16 +1,6 @@
 import React from "react";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
-import Box from "@material-ui/core/Box";
-import TextField from "@material-ui/core/TextField";
-import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
 import "./Contact.css";
-import Facebook from "@material-ui/icons/Facebook";
-import Twitter from "@material-ui/icons/Twitter";
-import Instagram from "@material-ui/icons/Instagram";
 import IconButton from '@material-ui/core/IconButton';
-import Send from "@material-ui/icons/Send";
 import { FaFacebook, FaTwitter, FaGithub, FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 
@@ -18,8 +8,6 @@ const Contact = () => {
   return (
     <div className="contact__card">
       <h1 className="card__heading animate-fading">Contact Me</h1>
-      <div className="card__images">
-      </div>
       <ul className="card__numbers animate-opacity">
         <li className="card__number">+27</li>
         <li className="card__number">68</li>

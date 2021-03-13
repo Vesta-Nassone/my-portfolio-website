@@ -5,7 +5,8 @@ import ReactParticles from "./ReactParticles";
 
 const Home = () => {
   return (
-    <React.Fragment>      <ReactParticles />
+    <React.Fragment>      
+      <ReactParticles />
       <Header />
     </React.Fragment>
   );
