@@ -16,7 +16,7 @@ function App() {
           alignItems: "center",
         }}>
         <Router>
-          {/* <Navbar /> */}
+          <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/contact" component={Contact} />

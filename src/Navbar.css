@@ -1,17 +1,18 @@
-.navbar__image{
-    width: 100%;
-}
-.small__screen{
-    width: 25% !important
-}
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Iceland&display=swap');
+
 .sidebar{
+    position:fixed;
     height:100%;
-    width:100px;
-    background-color:rgb(44, 127, 236);
-    position:fixed!important;
+    width:150px;
+    top: 0px;
     z-index:1;
-    overflow:auto
-}
-.nav{
-    background-color: aquamarine;
+    overflow:auto;
+    font-family: 'Iceland', cursive;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(0.5em);
+    border: 1px solid;
+    border-color: #fff8 transparent transparent #fff8;
+    border-radius: 1em;
+    box-shadow: 1em 1em .5em #0008;
 }
