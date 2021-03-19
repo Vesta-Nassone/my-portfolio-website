@@ -5,9 +5,8 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "./avatar.jpg";
 import "./Header.css";
-import { FaFacebook, FaTwitter, FaGithub, FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
 import IconButton from '@material-ui/core/IconButton';
 import { useSpring, animated, config } from 'react-spring';
 
@@ -49,7 +48,7 @@ const Header = () => {
 
             <Box className={classes.typedContainer}>
                 <Grid container justify="center">
-                    <Avatar className={classes.avatar} src={avatar} alt="Vesta Nassone" />
+                    <Avatar className={classes.avatar} src={'https://drive.google.com/uc?export=view&id=1dqRHxE62MEjLCtmPG943bUqG9jCjq5Nx'} alt="Vesta Nassone" />
                 </Grid>
                 <Typography className={classes.title} variant="h4">
                     Hi<span>👋🏾</span> I am <br></br>
@@ -72,11 +71,6 @@ const Header = () => {
                 <div className="social__icons">
                     <ul className="card__socialIcons">
                         <li>
-                            <IconButton className="social-icon-hover animate-fb">
-                                <FaFacebook size="2em" color="blue" />
-                            </IconButton>
-                        </li>
-                        <li>
                             <IconButton className="social-icon-hover animate-twt">
                                 <FaTwitter size="2em" color="#1DA1F2" />
                             </IconButton>
@@ -89,11 +83,6 @@ const Header = () => {
                         <li>
                             <IconButton className="social-icon-hover animate-whtapp">
                                 <FaWhatsapp size="2em" color="green" />
-                            </IconButton>
-                        </li>
-                        <li>
-                            <IconButton className="social-icon-hover animate-insta">
-                                <FaInstagram size="2em" color="#fb3958" />
                             </IconButton>
                         </li>
                         <li>

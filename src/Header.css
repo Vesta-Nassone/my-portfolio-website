@@ -1,8 +1,8 @@
 .header__card {
-  max-width: 95vw;
-  max-height: 100vh;
+  max-width: 88vw;
+  max-height: 90vh;
     position: fixed;
-    width: auto;
+    width: 450px;
     height: auto;
     padding: 2em;
     font-family: 'Courier Prime', mono;
@@ -16,11 +16,10 @@
     cursor: pointer;
   }
   .social__icons{
-    display: flex;
+    display: flex-box;
     overflow: auto;
-  }
-  .animate-fb{
-    animation:pulse-fb 2s infinite
+    justify-content: space-evenly;
+    padding: 2px;
   }
   .animate-twt{
     animation: pulse-twt 2s infinite
@@ -31,27 +30,8 @@
   .animate-whtapp{
     animation: pulse-whtapp 2s infinite;
   }
-  .animate-insta{
-    animation: pulse-insta 2s infinite;
-  }
   .animate-lnkdin{
     animation: pulse-lnkdin 2s infinite;
-  }
-  @keyframes pulse-fb {
-    0% {
-      transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(31, 51, 228, 0.7);
-    }
-    
-    70% {
-      transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
-    }
-    
-    100% {
-      transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
-    }
   }
   @keyframes pulse-twt {
     0% {
@@ -99,22 +79,6 @@
     100% {
       transform: scale(0.95);
       box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
-    }
-  }
-  @keyframes pulse-insta {
-    0% {
-      transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(204, 27, 151, 0.7);
-    }
-    
-    70% {
-      transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);
-    }
-    
-    100% {
-      transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
     }
   }
   @keyframes pulse-lnkdin {
