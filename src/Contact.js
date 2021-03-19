@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import IconButton from '@material-ui/core/IconButton';
-import { FaFacebook, FaTwitter, FaGithub, FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
 
 
 const Contact = () => {
@@ -14,30 +14,29 @@ const Contact = () => {
         <li className="card__number">101</li>
         <li className="card__number">3400</li>
       </ul>
-      <form action="/action_page.php" target="_blank">
-        <p>
-          <input placeholder="Name" autoComplete="on" className="card__input" />
-        </p>
-        <p>
-          <input placeholder="Email" autoComplete="on" className="card__input" />
-        </p>
-        <p>
-          <input placeholder="Subject" className="card__input" />
-        </p>
-        <p>
-          <input placeholder="Message" className="card__input" />
-        </p>
-        <p>
-          <button className="card__button">Send Message</button>
-        </p>
-      </form>
+      <div>
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input placeholder="Name" autoComplete="on" className="card__input" />
+          </p>
+          <p>
+            <input placeholder="Email" autoComplete="on" className="card__input" />
+          </p>
+          <p>
+            <input placeholder="Subject" className="card__input" />
+          </p>
+          <p>
+            <input placeholder="Message" className="card__input" />
+          </p>
+          <p>
+            <button className="card__button">Send Message</button>
+          </p>
+        </form>
+
+      </div>
+
       <div>
         <ul className="card__socialIcons">
-          <li>
-            <IconButton className="social-icon-hover">
-              <FaFacebook size="2em" color="blue" />
-            </IconButton>
-          </li>
           <li>
             <IconButton className="social-icon-hover">
               <FaTwitter size="2em" color="#1DA1F2" />
@@ -51,11 +50,6 @@ const Contact = () => {
           <li>
             <IconButton className="social-icon-hover">
               <FaWhatsapp size="2em" color="green" />
-            </IconButton>
-          </li>
-          <li>
-            <IconButton className="social-icon-hover">
-              <FaInstagram size="2em" color="#fb3958" />
             </IconButton>
           </li>
           <li>
