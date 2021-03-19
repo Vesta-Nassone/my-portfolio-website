@@ -3,10 +3,12 @@
 .sidebar{
     position:fixed;
     height:100%;
-    width:150px;
+    width:120px;
+    max-width: 12%;
     top: 0px;
     z-index:1;
     overflow:auto;
+    padding-right: 12px;
     font-family: 'Iceland', cursive;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.2);
@@ -16,3 +18,39 @@
     border-radius: 1em;
     box-shadow: 1em 1em .5em #0008;
 }
+.sidebar__icons {
+    padding: 0;
+    margin: 1em 0;
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    font-family: 'Iceland', cursive;
+    font-size: 20px;
+}
+.small__sidebar{
+    position:fixed;
+    width:100%;
+    max-height: 10%;
+    bottom: 0;
+    margin: 2px 1px 2px;
+    padding: 2px;
+    z-index:1;
+    font-family: 'Iceland', cursive;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(0.5em);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(0.5em);
+    border: 1px solid;
+    border-color: #fff8 transparent transparent #fff8;
+    border-radius: 1em;
+    box-shadow: 1em 1em .5em #0008;
+}
+.hover-black:hover{
+    color:#fff;
+    background-color:#000
+}
+@media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
+@media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.sidebar.w3-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
+@media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
