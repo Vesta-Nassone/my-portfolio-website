@@ -1,12 +1,13 @@
 <div align="center">
-    <img height="100" src="https://www.logolynx.com/images/logolynx/8d/8dbb9e50c4cb8441d5e8be12932f958b.jpeg">
+    <div><p><span>🤖</span></p></div>
     <h1 align="center">Optimus</h1>
-    <p>This is the UI library for Tripplo's Optimus design system. <span>🤖</span></p>
+    <p>This is the UI library for Tripplo's Optimus design system. 
     <a href="https://github.com/Tripplo-Software/optimus" title="Tripplo Optimus">
     </a>
     <p>
-      <img alt="MIT License" src="https://img.shields.io/github/license/chakra-ui/chakra-ui"/>
-      <img src="https://img.shields.io/npm/v/@apollo/space-kit.svg">
+      <img alt="MIT License" src="https://img.shields.io/github/license/Tripplo-Software/optimus"/>
+      <img src="https://img.shields.io/github/issues/Tripplo-Software/optimus">
+      <img src="https://img.shields.io/npm/v/optimus-ui">
     </p>
   </div>
   Optimus UI provides a set of accessible, reusable, and composable React
@@ -18,18 +19,22 @@
   ## Getting started
 
   ```shell
-  npm install
+  npm i optimus-ui
   or
-  yarn install
+  yarn add optimus-ui
   ```
 
   ## Usage
 
+  1. Import the styles from "optimus-ui/dist/optimus-ui.css";
+
+  2. Import the Components you desire into your JS/TS app from the `@optimus-ui` package.
+
   ```tsx
   import "./styles.css";
-import { Button, Typography } from "optimus-ui";
-import "optimus-ui/dist/optimus-ui.css";
-export default function App() {
+  import { Button, Typography } from "optimus-ui";
+  import "optimus-ui/dist/optimus-ui.css";
+  export default function App() {
   return (
     <div className="App">
       <Typography
