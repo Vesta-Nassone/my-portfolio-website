@@ -5,7 +5,9 @@
     height: auto;
     width:150px;
     max-width: 12%;
-    top: 10%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     z-index:1;
     overflow:auto;
     padding-right: 12px;
