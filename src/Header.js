@@ -1,6 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
+import avatar from './avatar.jpeg'
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
@@ -12,8 +13,8 @@ import { useSpring, animated, config } from 'react-spring';
 
 const useStyles = makeStyles((theme) => ({
     avatar: {
-        width: theme.spacing(15),
-        height: theme.spacing(15),
+        width: theme.spacing(25),
+        height: theme.spacing(25),
         margin: theme.spacing(1),
     },
     title: {
@@ -48,7 +49,7 @@ const Header = () => {
 
             <Box className={classes.typedContainer}>
                 <Grid container justify="center">
-                    <Avatar className={classes.avatar} src={'https://drive.google.com/uc?export=view&id=1dqRHxE62MEjLCtmPG943bUqG9jCjq5Nx'} alt="Vesta Nassone" />
+                    <Avatar className={classes.avatar} src={avatar} alt="Vesta Nassone" />
                 </Grid>
                 <Typography className={classes.title} variant="h4">
                     Hi<span>👋🏾</span> I am <br></br>
