@@ -38,22 +38,35 @@ const Contact = () => {
         <ul className="card__socialIcons">
           <li>
             <IconButton className="social-icon-hover">
-              <FaTwitter size="1.5em" color="#1DA1F2" />
+              <a
+                href="https://twitter.com/NassoneVesta"
+                rel="noreferrer"
+                target="_blank"
+              ><FaTwitter size="2em" color="#1DA1F2" /></a>
             </IconButton>
           </li>
           <li>
             <IconButton className="social-icon-hover">
-              <FaGithub size="1.5em" color="black" />
+              <a href="https://github.com/Vesta-Nassone"
+                rel="noreferrer"
+                target="_blank"
+              ><FaGithub size="2em" color="black" /></a>
             </IconButton>
           </li>
           <li>
             <IconButton className="social-icon-hover">
-              <FaWhatsapp size="1.5em" color="green" />
+              <a href="https://wa.me/27681013400"
+                rel="noreferrer"
+                target="_blank"
+              ><FaWhatsapp size="2em" color="green" /></a>
             </IconButton>
           </li>
           <li>
             <IconButton className="social-icon-hover">
-              <FaLinkedin size="1.5em" color="#0077B5" />
+              <a href="https://www.linkedin.com/in/vesta-nassone-77b6a115b/"
+                rel="noreferrer"
+                target="_blank"
+              ><FaLinkedin size="2em" color="#0077B5" /></a>
             </IconButton>
           </li>
         </ul>

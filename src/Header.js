@@ -62,32 +62,42 @@ const Header = () => {
                         loop
                     />
                 </Typography>
-                <div className="social__icons">
-                    <IconButton className="social-icon-hover">
-                        <a
-                            href="https://twitter.com/NassoneVesta"
-                            rel="noreferrer"
-                            target="_blank"
-                        ><span></span><FaTwitter size="2em" color="#1DA1F2" /></a>
-                    </IconButton>
-                    <IconButton className="social-icon-hover">
-                        <a href="https://github.com/Vesta-Nassone"
-                            rel="noreferrer"
-                            target="_blank"
-                        ><span><FaGithub size="2em" color="black" /></span></a>
-                    </IconButton>
-                    <IconButton className="social-icon-hover">
-                        <a href="https://wa.me/27681013400"
-                            rel="noreferrer"
-                            target="_blank"
-                        ><span><FaWhatsapp size="2em" color="green" /></span></a>
-                    </IconButton>
-                    <IconButton className="social-icon-hover">
-                        <a href="https://www.linkedin.com/in/vesta-nassone-77b6a115b/"
-                            rel="noreferrer"
-                            target="_blank"
-                        ><span><FaLinkedin size="2em" color="#0077B5" /></span></a>
-                    </IconButton>
+                <div>
+                    <ul className="card__socialIcons">
+                        <li>
+                            <IconButton className="social-icon-hover">
+                                <a
+                                    href="https://twitter.com/NassoneVesta"
+                                    rel="noreferrer"
+                                    target="_blank"
+                                ><FaTwitter size="2em" color="#1DA1F2" /></a>
+                            </IconButton>
+                        </li>
+                        <li>
+                            <IconButton className="social-icon-hover">
+                                <a href="https://github.com/Vesta-Nassone"
+                                    rel="noreferrer"
+                                    target="_blank"
+                                ><FaGithub size="2em" color="black" /></a>
+                            </IconButton>
+                        </li>
+                        <li>
+                            <IconButton className="social-icon-hover">
+                                <a href="https://wa.me/27681013400"
+                                    rel="noreferrer"
+                                    target="_blank"
+                                ><FaWhatsapp size="2em" color="green" /></a>
+                            </IconButton>
+                        </li>
+                        <li>
+                            <IconButton className="social-icon-hover">
+                                <a href="https://www.linkedin.com/in/vesta-nassone-77b6a115b/"
+                                    rel="noreferrer"
+                                    target="_blank"
+                                ><FaLinkedin size="2em" color="#0077B5" /></a>
+                            </IconButton>
+                        </li>
+                    </ul>
                 </div>
 
             </Box>
