@@ -39,14 +39,7 @@ const Header = () => {
     const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: config.default }));
 
     return (
-        <animated.div
-            className="header__card"
-            onMouseMove={({ clientX: x, clientY: y }) => (set({ xys: calc(x, y) }))}
-            onMouseLeave={() => set({ xys: [0, 0, 1] })}
-            style={{
-                transform: props.xys.interpolate(trans)
-            }}>
-
+        <div className="header__card">
             <Box className={classes.typedContainer}>
                 <Grid container justify="center">
                     <Avatar className={classes.avatar} src={avatar} alt="Vesta Nassone" />
@@ -69,9 +62,7 @@ const Header = () => {
                         loop
                     />
                 </Typography>
-                
-            </Box>
-            <div className="social__icons">
+                <div className="social__icons">
                     <IconButton className="social-icon-hover">
                         <a
                             href="https://twitter.com/NassoneVesta"
@@ -98,7 +89,9 @@ const Header = () => {
                         ><span><FaLinkedin size="2em" color="#0077B5" /></span></a>
                     </IconButton>
                 </div>
-        </animated.div>
+
+            </Box>
+        </div>
     );
 };
 
