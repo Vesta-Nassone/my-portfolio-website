@@ -5,6 +5,7 @@
     width: 450px;
     height: auto;
     padding: 2em;
+    overflow: auto;
     font-family: 'Courier Prime', mono;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.2);
@@ -17,8 +18,9 @@
   }
   .social__icons{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    width: auto;
+    height: auto;
     overflow: auto;
     justify-content: center;
-    /* padding: 2px; */
   }
