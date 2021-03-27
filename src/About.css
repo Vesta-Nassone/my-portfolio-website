@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+
+.container {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.container > div {
+  position: absolute;
+  width: 90vw;
+  height: 90vh;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > div > div {
+  background-color: rgb(228, 72, 72);
+  background-size: auto 85%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 45vh;
+  max-width: 300px;
+  height: 85vh;
+  max-height: 570px;
+  will-change: transform;
+  border-radius: 10px;
+  color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(0.5em);
+    border: 1px solid;
+    border-color: #fff8 transparent transparent #fff8;
+    border-radius: 1em;
+    /* box-shadow: 1em 1em .5em #0008; */
+    cursor: grab;
+  box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
+}
