@@ -39,7 +39,13 @@ const Header = () => {
     const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: config.default }));
 
     return (
-        <div className="header__card">
+        <animated.div
+            className="header__card"
+            onMouseMove={({ clientX: x, clientY: y }) => (set({ xys: calc(x, y) }))}
+            onMouseLeave={() => set({ xys: [0, 0, 1] })}
+            style={{
+                transform: props.xys.interpolate(trans)
+            }}>
             <Box className={classes.typedContainer}>
                 <Grid container justify="center">
                     <Avatar className={classes.avatar} src={avatar} alt="Vesta Nassone" />
@@ -99,9 +105,8 @@ const Header = () => {
                         </li>
                     </ul>
                 </div>
-
             </Box>
-        </div>
+        </animated.div>
     );
 };
 
