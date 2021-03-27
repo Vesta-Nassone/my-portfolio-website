@@ -13,8 +13,8 @@ import { useSpring, animated, config } from 'react-spring';
 
 const useStyles = makeStyles((theme) => ({
     avatar: {
-        width: theme.spacing(25),
-        height: theme.spacing(25),
+        width: theme.spacing(20),
+        height: theme.spacing(20),
         margin: theme.spacing(1),
     },
     title: {
