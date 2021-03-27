@@ -1,6 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
+import avatar from './avatar.jpeg';
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
@@ -12,8 +13,8 @@ import { useSpring, animated, config } from 'react-spring';
 
 const useStyles = makeStyles((theme) => ({
     avatar: {
-        width: theme.spacing(15),
-        height: theme.spacing(15),
+        width: theme.spacing(20),
+        height: theme.spacing(20),
         margin: theme.spacing(1),
     },
     title: {
@@ -38,17 +39,10 @@ const Header = () => {
     const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: config.default }));
 
     return (
-        <animated.div
-            className="header__card"
-            onMouseMove={({ clientX: x, clientY: y }) => (set({ xys: calc(x, y) }))}
-            onMouseLeave={() => set({ xys: [0, 0, 1] })}
-            style={{
-                transform: props.xys.interpolate(trans)
-            }}>
-
+        <div className="header__card">
             <Box className={classes.typedContainer}>
                 <Grid container justify="center">
-                    <Avatar className={classes.avatar} src={'https://drive.google.com/uc?export=view&id=1dqRHxE62MEjLCtmPG943bUqG9jCjq5Nx'} alt="Vesta Nassone" />
+                    <Avatar className={classes.avatar} src={avatar} alt="Vesta Nassone" />
                 </Grid>
                 <Typography className={classes.title} variant="h4">
                     Hi<span>👋🏾</span> I am <br></br>
@@ -69,31 +63,35 @@ const Header = () => {
                     />
                 </Typography>
                 <div className="social__icons">
-                    <ul className="card__socialIcons">
-                        <li>
-                            <IconButton className="social-icon-hover animate-twt">
-                                <FaTwitter size="2em" color="#1DA1F2" />
-                            </IconButton>
-                        </li>
-                        <li>
-                            <IconButton className="social-icon-hover animate-gh">
-                                <FaGithub size="2em" color="black" />
-                            </IconButton>
-                        </li>
-                        <li>
-                            <IconButton className="social-icon-hover animate-whtapp">
-                                <FaWhatsapp size="2em" color="green" />
-                            </IconButton>
-                        </li>
-                        <li>
-                            <IconButton className="social-icon-hover animate-lnkdin">
-                                <FaLinkedin size="2em" color="#0077B5" />
-                            </IconButton>
-                        </li>
-                    </ul>
+                    <IconButton className="social-icon-hover">
+                        <a
+                            href="https://twitter.com/NassoneVesta"
+                            rel="noreferrer"
+                            target="_blank"
+                        ><span></span><FaTwitter size="2em" color="#1DA1F2" /></a>
+                    </IconButton>
+                    <IconButton className="social-icon-hover">
+                        <a href="https://github.com/Vesta-Nassone"
+                            rel="noreferrer"
+                            target="_blank"
+                        ><span><FaGithub size="2em" color="black" /></span></a>
+                    </IconButton>
+                    <IconButton className="social-icon-hover">
+                        <a href="https://wa.me/27681013400"
+                            rel="noreferrer"
+                            target="_blank"
+                        ><span><FaWhatsapp size="2em" color="green" /></span></a>
+                    </IconButton>
+                    <IconButton className="social-icon-hover">
+                        <a href="https://www.linkedin.com/in/vesta-nassone-77b6a115b/"
+                            rel="noreferrer"
+                            target="_blank"
+                        ><span><FaLinkedin size="2em" color="#0077B5" /></span></a>
+                    </IconButton>
                 </div>
+
             </Box>
-        </animated.div>
+        </div>
     );
 };
 
