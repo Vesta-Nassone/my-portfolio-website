@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
-import avatar from './avatar.jpeg'
+import avatar from './avatar.jpeg';
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
@@ -69,31 +69,31 @@ const Header = () => {
                         loop
                     />
                 </Typography>
-                <div className="social__icons">
-                    <ul className="card__socialIcons">
-                        <li>
-                            <IconButton className="social-icon-hover animate-twt">
-                                <FaTwitter size="2em" color="#1DA1F2" />
-                            </IconButton>
-                        </li>
-                        <li>
-                            <IconButton className="social-icon-hover animate-gh">
-                                <FaGithub size="2em" color="black" />
-                            </IconButton>
-                        </li>
-                        <li>
-                            <IconButton className="social-icon-hover animate-whtapp">
-                                <FaWhatsapp size="2em" color="green" />
-                            </IconButton>
-                        </li>
-                        <li>
-                            <IconButton className="social-icon-hover animate-lnkdin">
-                                <FaLinkedin size="2em" color="#0077B5" />
-                            </IconButton>
-                        </li>
-                    </ul>
-                </div>
             </Box>
+            <div className="social__icons">
+                <ul className="card__socialIcons">
+                    <li>
+                        <IconButton className="social-icon-hover">
+                            <FaTwitter size="2em" color="#1DA1F2" />
+                        </IconButton>
+                    </li>
+                    <li>
+                        <IconButton className="social-icon-hover">
+                            <FaGithub size="2em" color="black" />
+                        </IconButton>
+                    </li>
+                    <li>
+                        <IconButton className="social-icon-hover">
+                            <FaWhatsapp size="2em" color="green" />
+                        </IconButton>
+                    </li>
+                    <li>
+                        <IconButton className="social-icon-hover">
+                            <FaLinkedin size="2em" color="#0077B5" />
+                        </IconButton>
+                    </li>
+                </ul>
+            </div>
         </animated.div>
     );
 };

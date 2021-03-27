@@ -7,8 +7,8 @@ import { FaTwitter, FaGithub, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
 const Contact = () => {
   return (
     <div className="contact__card">
-      <h1 className="card__heading animate-fading">Contact Me</h1>
-      <ul className="card__numbers animate-opacity">
+      <h1 className="card__heading animate-zoom">Contact Me</h1>
+      <ul className="card__numbers ">
         <li className="card__number">+27</li>
         <li className="card__number">68</li>
         <li className="card__number">101</li>
@@ -32,29 +32,28 @@ const Contact = () => {
             <button className="card__button">Send Message</button>
           </p>
         </form>
-
       </div>
 
       <div>
         <ul className="card__socialIcons">
           <li>
             <IconButton className="social-icon-hover">
-              <FaTwitter size="2em" color="#1DA1F2" />
+              <FaTwitter size="1.5em" color="#1DA1F2" />
             </IconButton>
           </li>
           <li>
             <IconButton className="social-icon-hover">
-              <FaGithub size="2em" color="black" />
+              <FaGithub size="1.5em" color="black" />
             </IconButton>
           </li>
           <li>
             <IconButton className="social-icon-hover">
-              <FaWhatsapp size="2em" color="green" />
+              <FaWhatsapp size="1.5em" color="green" />
             </IconButton>
           </li>
           <li>
             <IconButton className="social-icon-hover">
-              <FaLinkedin size="2em" color="#0077B5" />
+              <FaLinkedin size="1.5em" color="#0077B5" />
             </IconButton>
           </li>
         </ul>
