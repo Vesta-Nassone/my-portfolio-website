@@ -6,19 +6,14 @@ import InfoIcon from '@material-ui/icons/Info';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import Apps from "@material-ui/icons/Apps";
 import HomeIcon from '@material-ui/icons/Home';
-import { green } from '@material-ui/core/colors';
-import { red } from '@material-ui/core/colors';
-import { brown } from '@material-ui/core/colors';
-import { blue } from '@material-ui/core/colors';
-import { orange } from '@material-ui/core/colors';
-import { yellow } from '@material-ui/core/colors';
+import { green, red, brown, blue, orange, yellow } from '@material-ui/core/colors';
 import { Link } from "react-router-dom";
+
 
 export default function Navbar() {
     return (
-        <div className="w3-top">
+        <div className="top">
             <nav className="sidebar w3-bar-block w3-small w3-hide-small w3-center">
-                <img src={'https://drive.google.com/uc?export=view&id=1dqRHxE62MEjLCtmPG943bUqG9jCjq5Nx'} alt="Vesta Nassone" style={{ width: "100%" }} />
                 <ul className="sidebar__icons">
                     <li>
                         <Link to="/"><HomeIcon
