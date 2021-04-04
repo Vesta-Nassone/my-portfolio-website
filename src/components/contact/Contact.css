@@ -19,7 +19,7 @@
   box-shadow: 1em 1em .5em #0008;
 }
 .card__heading {
-  margin: 0 0 .50em;
+  margin: 0 0 .30em;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
@@ -27,7 +27,7 @@
 
 .card__numbers {
   padding: 0;
-  margin: 1em 0;
+  margin: 0.2em 0;
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -55,7 +55,7 @@
 }
 .card__button {
   position: relative;
-  padding: 15px;
+  padding: 10px;
   margin:5px;
   width: 100%;
   border-radius: 25px 25px 25px 25px;
@@ -71,7 +71,7 @@
   display: flex;
   justify-content: space-between;
 }
-.animate-zoom {
+/* .animate-zoom {
   animation:animatezoom 2s infinite
 }
 @keyframes animatezoom{
@@ -80,4 +80,4 @@
 }
 .social-icon-hover:hover {
   transform: scale(1.3);
-}
+} */

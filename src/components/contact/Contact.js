@@ -7,7 +7,7 @@ import { FaTwitter, FaGithub, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
 const Contact = () => {
   return (
     <div className="contact__card">
-      <h1 className="card__heading animate-zoom">Contact Me</h1>
+      <h1 className="card__heading">Contact Me</h1>
       <ul className="card__numbers ">
         <li className="card__number">+27</li>
         <li className="card__number">68</li>
