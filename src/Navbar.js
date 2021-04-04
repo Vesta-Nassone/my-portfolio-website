@@ -3,10 +3,10 @@ import "./Navbar.css";
 import GamesIcon from '@material-ui/icons/Games';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import InfoIcon from '@material-ui/icons/Info';
-import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
+import TuneIcon from '@material-ui/icons/Tune';
 import Apps from "@material-ui/icons/Apps";
 import HomeIcon from '@material-ui/icons/Home';
-import { green, red, brown, blue, orange, yellow } from '@material-ui/core/colors';
+import { green, red, blue, orange, yellow } from '@material-ui/core/colors';
 import { Link } from "react-router-dom";
 
 
@@ -23,7 +23,7 @@ export default function Navbar() {
                             }} /><p>Home</p></Link>
                     </li>
                     <li>
-                        <Link to="/about"><PersonOutlineIcon style={{ fontSize: 50, color: brown[800] }} /><p>About</p></Link>
+                        <Link to="/skills"><TuneIcon style={{ fontSize: 50, color: blue[800] }} /><p>Skills</p></Link>
                     </li>
                     <li>
                         <Link to="/projects"><Apps style={{ fontSize: 50, color: blue[200] }} /><p>Projects</p></Link>
@@ -47,7 +47,7 @@ export default function Navbar() {
                             <Link to="/"><HomeIcon style={{ fontSize: 50, color: green[600] }} /></Link>
                         </li>
                         <li>
-                            <Link to="/about"><PersonOutlineIcon style={{ fontSize: 50, color: brown[500] }} /></Link>
+                            <Link to="/about"><TuneIcon style={{ fontSize: 50, color: blue[500] }} /></Link>
                         </li>
                         <li>
                             <Link to="/projects"><p><Apps style={{ fontSize: 50, color: blue[600] }} /></p></Link>
