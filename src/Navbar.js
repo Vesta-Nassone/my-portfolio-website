@@ -47,7 +47,7 @@ export default function Navbar() {
                             <Link to="/"><HomeIcon style={{ fontSize: 50, color: green[600] }} /></Link>
                         </li>
                         <li>
-                            <Link to="/about"><TuneIcon style={{ fontSize: 50, color: blue[500] }} /></Link>
+                            <Link to="/skills"><TuneIcon style={{ fontSize: 50, color: blue[500] }} /></Link>
                         </li>
                         <li>
                             <Link to="/projects"><p><Apps style={{ fontSize: 50, color: blue[600] }} /></p></Link>
