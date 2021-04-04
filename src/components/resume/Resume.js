@@ -1,9 +1,9 @@
 import React from 'react';
 import './Resume.css';
 import Typography from '@material-ui/core/Typography';
-import tripplo from './tripplo.svg';
-import uct from './uct.png';
-import blanktech from './blanktech.png';
+import tripplo from '../../assets/images/tripplo.svg';
+import uct from '../../assets/images/uct.png';
+import blanktech from '../../assets/images/blanktech.png';
 
 export default function Resume() {
     return (
