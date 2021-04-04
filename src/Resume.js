@@ -3,8 +3,8 @@ import './Resume.css';
 
 export default function Resume() {
     return (
-        <div className="skills__container">
-                <h2 className="skills__heading">
+        <div className="resume__container">
+                <h2 className="resume__heading">
                     My Skills
                 </h2>
         </div>
