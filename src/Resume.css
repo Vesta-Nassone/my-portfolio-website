@@ -1,6 +1,6 @@
 .resume__container{
     position: fixed;
-    width: 500px;
+    width: 600px;
     height: 500px;
     max-width: 90vw;
     max-height:85vh;
@@ -24,3 +24,15 @@
     font-weight: 400;
   }
   
+.typography{
+  font-weight: 400;
+  margin: 0 0 .50em;
+}
+.tripplo__experience{
+  display: flexbox;
+  justify-content: space-between;
+}
+.tripplo__logo{
+  width: 50px;
+  height: auto;
+}
