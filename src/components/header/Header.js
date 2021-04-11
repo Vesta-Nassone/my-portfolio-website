@@ -52,7 +52,7 @@ const Header = () => {
                 </Grid>
                 <Typography className={classes.title} variant="h4">
                     Hi<span>👋🏾</span> I am <br></br>
-                    <Typed strings={["Vesta Nassone"]} typeSpeed={40} />
+                    <Typed strings={["Vesta Nassone"]} typeSpeed={2} />
                 </Typography>
                 <Typography className={classes.subtitle} variant="h5">
                     <Typed
@@ -60,11 +60,12 @@ const Header = () => {
                             "Frontend Developer",
                             "Backend Developer",
                             "Android App Developer",
+                            "Embedded Systems Developer",
                             "AWS Enthusiast",
                             "Cyber Security Hobbyist"
                         ]}
-                        typeSpeed={40}
-                        backSpeed={50}
+                        typeSpeed={20}
+                        backSpeed={5}
                         loop
                     />
                 </Typography>
