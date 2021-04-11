@@ -68,3 +68,7 @@
   display: flex;
   justify-content: space-between;
 }
+
+.social-icon-hover:hover {
+  transform: scale(1.3);
+}
