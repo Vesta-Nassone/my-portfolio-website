@@ -51,16 +51,15 @@ const Header = () => {
                     <Avatar className={classes.avatar} src={avatar} alt="Vesta Nassone" />
                 </Grid>
                 <Typography className={classes.title} variant="h4">
-                    Hi<span>👋🏾</span> I am <br></br>
+                    Hi<span>👋🏾</span> I am <br/>
                     <Typed strings={["Vesta Nassone"]} typeSpeed={2} />
                 </Typography>
                 <Typography className={classes.subtitle} variant="h5">
                     <Typed
                         strings={[
                             "Frontend Developer",
-                            "Backend Developer",
-                            "Android App Developer",
-                            "Embedded Systems Developer",
+                            "Backend Developer",                            
+                            "ES Developer",
                             "AWS Enthusiast",
                             "Cyber Security Hobbyist"
                         ]}
