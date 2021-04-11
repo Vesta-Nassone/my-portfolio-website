@@ -23,49 +23,49 @@ const ReactParticles = () => {
         params={{
           particles: {
             number: {
-              value: 200,
+              value: 100,
               density: {
                 enable: true,
-                value_area: 800,
+                value_area: 600,
               },
             },
             shape: {
               type: "circle",
               stroke: {
                 width: 1,
-                color: "red",
+                color: "white",
               },
             },
 
             size: {
-              value: 5,
-              random: true,
+              value: 3,
+              random: false,
               anim: {
                 enable: false,
-                speed: 10,
+                speed: 5,
                 size_min: 0,
                 sync: true,
               },
             },
             line_linked: {
               enable: true,
-              distance: 100,
+              distance: 120,
               color: "#000",
               width: 2
             },
             opacity: {
-              value: 0.5,
+              value: 0.3,
               random: true,
               anim: {
                 enable: true,
-                speed: 1,
+                speed: 2,
                 opacity_min: 0.1,
                 sync: false,
               },
             },
             move: {
               enable: true,
-              speed: 3,
+              speed: 2,
               direction: "none",
               random: true,
               straight: false,
@@ -95,10 +95,7 @@ const ReactParticles = () => {
           }
         }}
       />
-
     </div>
-
-
   );
 };
 
