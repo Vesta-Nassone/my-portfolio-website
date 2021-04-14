@@ -21,9 +21,9 @@ export default function Projects() {
     return (
         <div className="projects__container">
             <h2 className="projects__heading"><u>Projects</u></h2>
-            <Grid Grid container spacing={2} >
+            <Grid container spacing={2} >
                 <Grid item xs={12}>
-                    <Grid container justify="center" spacing={2}>
+                    <Grid justifyContent="center" spacing={2}>
                         <ImageList sx={{ width: "auto", height: "auto" }}>
                             {itemData.map((item) => (
                                 <ImageListItem key={item.img}>
