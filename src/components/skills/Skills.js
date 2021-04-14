@@ -47,7 +47,7 @@ export default function Skills() {
             </h2>
             <Grid container className={classes.root} spacing={2}>
                 <Grid item xs={12}>
-                    <Grid container justify="center" spacing={2}>
+                    <Grid container justifyContent="center" spacing={2}>
                         {cards.map((value) => (
                             <Grid key={value} item>
                                 <Paper className={classes.paper} elevation={3}>
