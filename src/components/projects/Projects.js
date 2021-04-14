@@ -12,7 +12,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        paddingBottom: 10
+        paddingBottom: 5
     },
 }));
 
@@ -21,7 +21,7 @@ export default function Projects() {
     return (
         <div className="projects__container">
             <h2 className="projects__heading"><u>Projects</u></h2>
-            <Grid container spacing={2} >
+            <Grid container className={classes.root} spacing={2} >
                 <Grid item xs={12}>
                     <Grid justifyContent="center" spacing={2}>
                         <ImageList sx={{ width: "auto", height: "auto" }}>
