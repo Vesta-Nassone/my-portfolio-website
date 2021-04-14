@@ -9,9 +9,10 @@ import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        flexGrow: 1,
-        paddingBottom: 5,
-        // backgroundColor: theme.palette.background.default
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'space-around',
+        overflow: 'hidden',
     },
 }));
 
@@ -20,13 +21,13 @@ export default function Skills() {
     return (
         <div className="skills__container">
             <h2 className="skills__heading"><u>My Skills</u></h2>
-            <Grid container className={classes.root} letterSpacing={2}  >
+            <Grid container className={classes.root} spacing={2}  >
                 <Grid item xs={12} spacing={2}>
-                    <Grid justifyContent="center" >
+                    <Grid justifyContent="center">
                         <ImageList sx={{ width: "auto", height: "auto" }}>
                             {itemData.map((item) => (
                                 <ImageListItem key={item.img}
-                                className="imageList__hover">
+                                    className="imageList__hover">
                                     <img
                                         srcSet={`${item.img}?w=248&auto=format 1x,
                 ${item.img}?w=248&auto=format&dpr=2 2x`}
@@ -130,6 +131,11 @@ const itemData = [
     {
         img: 'https://camo.githubusercontent.com/58423e406b227112756822122631d9eca5ab83334a6f0d8f2a6305b086815747/68747470733a2f2f6d6174657269616c2d75692e636f6d2f7374617469632f6c6f676f2e737667',
         title: 'MaterialUI',
+        cols: 2,
+    },
+    {
+        img: 'https://res.cloudinary.com/djr3obtg6/image/upload/v1/media/competence/cloud-api_civ34b',
+        title: 'RestAPI',
         cols: 2,
     },
 ];
