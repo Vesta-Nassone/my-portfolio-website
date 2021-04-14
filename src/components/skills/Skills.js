@@ -45,20 +45,36 @@ export default function Skills() {
             <h2 className="skills__heading">
                 My Skills
             </h2>
-            <Grid container className={classes.root} spacing={2}>
+            <Grid container className={classes.root} spacing={2} >
                 <Grid item xs={12}>
-                    <Grid container justifyContent="center" spacing={2}>
-                        {cards.map((value) => (
-                            <Grid key={value} item>
-                                <Paper className={classes.paper} elevation={3}>
-                                    <Avatar variant="rounded" className={classes.rectangle} src={value}>
-                                    </Avatar>
-                                </Paper>
-                            </Grid>
-                        ))}
+                    <Grid justifyContent="center" spacing={2}>
+                        <ImageList sx={{ width: "auto", height: "auto" }}>
+                            {itemData.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                        srcSet={`${item.img}?w=248&auto=format 1x,
+                ${item.img}?w=248&auto=format&dpr=2 2x`}
+                                        alt={item.title}
+                                        loading="lazy"
+                                    />
+                                    <ImageListItemBar
+                                        title={item.title}
+                                        // subtitle={item.author}
+                                        actionIcon={
+                                            <IconButton
+                                                sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+                                                aria-label={`info about ${item.title}`}
+                                            >
+                                                <InfoIcon />
+                                            </IconButton>
+                                        }
+                                    />
+                                </ImageListItem>
+                            ))}
+                        </ImageList>
                     </Grid>
                 </Grid>
-            </Grid>
+            </Grid >
         </div>
     );
 }
