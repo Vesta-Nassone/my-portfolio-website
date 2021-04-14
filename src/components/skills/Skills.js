@@ -10,7 +10,8 @@ import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        paddingBottom: 5
+        paddingBottom: 5,
+        // backgroundColor: theme.palette.background.default
     },
 }));
 
@@ -18,15 +19,14 @@ export default function Skills() {
     const classes = useStyles();
     return (
         <div className="skills__container">
-            <h2 className="skills__heading">
-                My Skills
-            </h2>
-            <Grid container className={classes.root} spacing={2} >
-                <Grid item xs={12}>
-                    <Grid justifyContent="center" spacing={2}>
+            <h2 className="skills__heading"><u>My Skills</u></h2>
+            <Grid container className={classes.root} letterSpacing={2}  >
+                <Grid item xs={12} spacing={2}>
+                    <Grid justifyContent="center" >
                         <ImageList sx={{ width: "auto", height: "auto" }}>
                             {itemData.map((item) => (
-                                <ImageListItem key={item.img}>
+                                <ImageListItem key={item.img}
+                                className="imageList__hover">
                                     <img
                                         srcSet={`${item.img}?w=248&auto=format 1x,
                 ${item.img}?w=248&auto=format&dpr=2 2x`}
@@ -35,6 +35,7 @@ export default function Skills() {
                                     />
                                     <ImageListItemBar
                                         title={item.title}
+                                        className="icon__title"
                                     />
                                 </ImageListItem>
                             ))}
@@ -124,6 +125,11 @@ const itemData = [
     {
         img: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/linux/linux.png',
         title: 'Linux',
+        cols: 2,
+    },
+    {
+        img: 'https://camo.githubusercontent.com/58423e406b227112756822122631d9eca5ab83334a6f0d8f2a6305b086815747/68747470733a2f2f6d6174657269616c2d75692e636f6d2f7374617469632f6c6f676f2e737667',
+        title: 'MaterialUI',
         cols: 2,
     },
 ];
