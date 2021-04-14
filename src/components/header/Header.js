@@ -47,7 +47,9 @@ const Header = () => {
                 transform: props.xys.interpolate(trans)
             }}>
             <Box className={classes.typedContainer}>
-                <Grid container justify="center">
+                <Grid 
+                container
+                justifyContent="center">
                     <Avatar className={classes.avatar} src={avatar} alt="Vesta Nassone" />
                 </Grid>
                 <Typography className={classes.title} variant="h4">
