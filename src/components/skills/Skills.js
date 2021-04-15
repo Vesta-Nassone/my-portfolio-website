@@ -27,27 +27,31 @@ export default function Skills() {
             <Box>
                 <Grid container={false} className={classes.root} spacing={2}  >
                     <Grid item={true} xs={12} spacing={2}>
-                        <Grid justifyContent="center">
-                            <ImageList sx={{ width: "auto", height: "auto" }}
+                        <ImageList sx={{
+                            width: "auto",
+                            height: "auto",
+                            // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
+                            transform: 'translateZ(0)',
+                        }}
                             className="imageList__container"
-                            gap={12}>
-                                {itemData.map((item) => (
-                                    <ImageListItem key={item.img}
-                                        className="imageList__hover">
-                                        <img
-                                            srcSet={`${item.img}?w=248&auto=format 1x,
+                            gap={12}
+                        >
+                            {itemData.map((item) => (
+                                <ImageListItem key={item.img}
+                                    className="imageList__hover">
+                                    <img
+                                        srcSet={`${item.img}?w=248&auto=format 1x,
                 ${item.img}?w=248&auto=format&dpr=2 2x`}
-                                            alt={item.title}
-                                            loading="lazy"
-                                        />
-                                        <ImageListItemBar
-                                            title={item.title}
-                                            className="icon__title"
-                                        />
-                                    </ImageListItem>
-                                ))}
-                            </ImageList>
-                        </Grid>
+                                        alt={item.title}
+                                        loading="lazy"
+                                    />
+                                    <ImageListItemBar
+                                        title={item.title}
+                                        className="icon__title"
+                                    />
+                                </ImageListItem>
+                            ))}
+                        </ImageList>
                     </Grid>
                 </Grid >
             </Box>
