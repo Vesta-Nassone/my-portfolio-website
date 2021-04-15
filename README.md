@@ -23,6 +23,8 @@ npm install
 ```
 npm run build
 ```
+
+Server will be available at http://127.0.0.1:3000 in your browser
 ### Overview of the Portfolio:
 
 #### Home Page:
