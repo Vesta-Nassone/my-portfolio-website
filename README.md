@@ -18,6 +18,11 @@ https://github.com/Vesta-Nassone/my-portfolio-website.git
 npm install
 ```
 
+#### For Production Build
+
+```
+npm run build
+```
 ### Overview of the Portfolio:
 
 #### Home Page:
