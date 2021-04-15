@@ -29,7 +29,8 @@ export default function Skills() {
                     <Grid item={true} xs={12} spacing={2}>
                         <Grid justifyContent="center">
                             <ImageList sx={{ width: "auto", height: "auto" }}
-                            className="imageList__container">
+                            className="imageList__container"
+                            gap={12}>
                                 {itemData.map((item) => (
                                     <ImageListItem key={item.img}
                                         className="imageList__hover">
