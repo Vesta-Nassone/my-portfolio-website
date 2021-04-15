@@ -51,6 +51,7 @@ export default function Skills() {
                                     <ImageListItemBar
                                         title={item.title}
                                         className="icon__title"
+                                        position="below"
                                         sx={{
                                             background:
                                                 'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
