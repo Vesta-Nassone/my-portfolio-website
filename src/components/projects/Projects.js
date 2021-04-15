@@ -31,10 +31,13 @@ export default function Projects() {
                                 // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
                                 transform: 'translateZ(0)',
                             }}
-                            gap={4}
+                            cols={3}
+                            gap={6}
                         >
                             {itemData.map((item) => (
-                                <ImageListItem key={item.img}>
+                                <ImageListItem
+                                    key={item.img}
+                                    >
                                     <img
                                         srcSet={`${item.img}?w=248&auto=format 1x,
                 ${item.img}?w=248&auto=format&dpr=2 2x`}
