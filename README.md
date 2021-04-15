@@ -2,6 +2,13 @@
 
 Personal portfolio website made with ReactJS for frontend and Firebase. Also uses CSS, JS, and MaterialUI for styling and it emulates glassmorphism design.It is a dynamic site so that you can control the content of the site through the Firebase admin area.
 
+### Languages and Tools used:
+
+<img align="left" alt="JavaScript" width="26px" 
+            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+<img align="left" alt="HTML5" width="26px"
+            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+
 ### Demo of this site available here
 ![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=vestanassone.netlify.app&style=for-the-badge&up_color=green&up_message=online&url=http%3A%2F%2Fvestanassone.netlify.app%2F)
 
