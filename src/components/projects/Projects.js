@@ -37,7 +37,7 @@ export default function Projects() {
                             {itemData.map((item) => (
                                 <ImageListItem
                                     key={item.img}
-                                    >
+                                    className="imageList__hover">
                                     <img
                                         srcSet={`${item.img}?w=248&auto=format 1x,
                 ${item.img}?w=248&auto=format&dpr=2 2x`}
