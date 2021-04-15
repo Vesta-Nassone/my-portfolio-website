@@ -12,7 +12,11 @@ Clone the repository using following command or download
 ```
 https://github.com/Vesta-Nassone/my-portfolio-website.git
 ```
+#### To install dependency
 
+```
+npm install
+```
 
 ### Overview of the Portfolio:
 
