@@ -42,3 +42,12 @@ Server will be available at http://127.0.0.1:3000 in your browser
 #### Contact Section:
 <img aline="center" src="https://i.imgur.com/djYOST6.png" alt="contact">
 
+## Author
+
+<blockquote>
+Vesta Nassone
+Email:vestanassone@gmail.com
+</blockquote>
+
+========Thank You !!!=========
+
