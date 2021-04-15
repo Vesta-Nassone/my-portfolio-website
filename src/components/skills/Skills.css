@@ -24,9 +24,8 @@
   font-weight: 400;
 }
 .icon__title {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 300;
+  text-transform: capitalize;
+  font-weight: 200;
 }
 .imageList__hover:hover {
   transform: scale(1.3);
