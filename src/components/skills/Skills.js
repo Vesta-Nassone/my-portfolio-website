@@ -1,7 +1,6 @@
 import React from 'react';
 import './Skills.css';
 import { makeStyles } from '@material-ui/core/styles';
-import Box from "@material-ui/core/Box";
 import Grid from '@material-ui/core/Grid';
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
@@ -24,46 +23,43 @@ export default function Skills() {
     return (
         <div className="skills__container">
             <h2 className="skills__heading"><u>My Skills</u></h2>
-            <Box>
-                <Grid container={false} className={classes.root} spacing={2}  >
-                    <Grid item={true} xs={12} spacing={2}>
-                        <ImageList
-                            sx={{
-                                width: "auto",
-                                height: "auto",
-                                // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
-                                transform: 'translateZ(0)',
-                            }}
-                            cols={3} 
-                            // rowHeight={164}
-                            className="imageList__container"
-                            gap={12}
-                        >
-                            {itemData.map((item) => (
-                                <ImageListItem key={item.img}
-                                    className="imageList__hover">
-                                    <img
-                                        srcSet={`${item.img}?w=248&auto=format 1x,
+            <Grid container={false} className={classes.root} spacing={2}  >
+                <Grid item={true} xs={12} spacing={2}>
+                    <ImageList
+                        sx={{
+                            width: "auto",
+                            height: "auto",
+                            overflow: "visible",
+                            // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
+                            transform: 'translateZ(0)',
+                        }}
+                        cols={3}
+                        gap={6}
+                    >
+                        {itemData.map((item) => (
+                            <ImageListItem key={item.img}
+                                className="imageList__hover">
+                                <img
+                                    srcSet={`${item.img}?w=248&auto=format 1x,
                 ${item.img}?w=248&auto=format&dpr=2 2x`}
-                                        alt={item.title}
-                                        loading="lazy"
-                                    />
-                                    <ImageListItemBar
-                                        title={item.title}
-                                        className="icon__title"
-                                        position="below"
-                                        sx={{
-                                            background:
-                                                'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
-                                                'rgba(250,0,100,0.3) 70%, rgba(0,0,0,0) 100%)',
-                                        }}
-                                    />
-                                </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Grid>
-                </Grid >
-            </Box>
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                                <ImageListItemBar
+                                    title={item.title}
+                                    className="icon__title"
+                                    position="below"
+                                    sx={{
+                                        background:
+                                            'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
+                                            'rgba(250,0,100,0.3) 70%, rgba(0,0,0,0) 100%)',
+                                    }}
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                </Grid>
+            </Grid >
         </div>
     );
 }
