@@ -1,6 +1,7 @@
 import React from 'react';
 import './Skills.css';
 import { makeStyles } from '@material-ui/core/styles';
+import Box from "@material-ui/core/Box";
 import Grid from '@material-ui/core/Grid';
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
@@ -11,8 +12,10 @@ const useStyles = makeStyles(() => ({
     root: {
         display: 'flex',
         flexWrap: 'wrap',
+        width: "auto",
+        height: "auto",
         justifyContent: 'space-around',
-        overflow: 'hidden',
+        overflow: 'visible',
     },
 }));
 
@@ -21,29 +24,32 @@ export default function Skills() {
     return (
         <div className="skills__container">
             <h2 className="skills__heading"><u>My Skills</u></h2>
-            <Grid container className={classes.root} spacing={2}  >
-                <Grid item xs={12} spacing={2}>
-                    <Grid justifyContent="center">
-                        <ImageList sx={{ width: "auto", height: "auto" }}>
-                            {itemData.map((item) => (
-                                <ImageListItem key={item.img}
-                                    className="imageList__hover">
-                                    <img
-                                        srcSet={`${item.img}?w=248&auto=format 1x,
+            <Box>
+                <Grid container={false} className={classes.root} spacing={2}  >
+                    <Grid item={true} xs={12} spacing={2}>
+                        <Grid justifyContent="center">
+                            <ImageList sx={{ width: "auto", height: "auto" }}
+                            className="imageList__container">
+                                {itemData.map((item) => (
+                                    <ImageListItem key={item.img}
+                                        className="imageList__hover">
+                                        <img
+                                            srcSet={`${item.img}?w=248&auto=format 1x,
                 ${item.img}?w=248&auto=format&dpr=2 2x`}
-                                        alt={item.title}
-                                        loading="lazy"
-                                    />
-                                    <ImageListItemBar
-                                        title={item.title}
-                                        className="icon__title"
-                                    />
-                                </ImageListItem>
-                            ))}
-                        </ImageList>
+                                            alt={item.title}
+                                            loading="lazy"
+                                        />
+                                        <ImageListItemBar
+                                            title={item.title}
+                                            className="icon__title"
+                                        />
+                                    </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </Grid>
                     </Grid>
-                </Grid>
-            </Grid >
+                </Grid >
+            </Box>
         </div>
     );
 }
