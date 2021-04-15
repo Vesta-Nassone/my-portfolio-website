@@ -41,7 +41,7 @@ export default function Projects() {
                                                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                                                 aria-label={`info about ${item.title}`}
                                             >
-                                                <InfoIcon />
+                                                <InfoIcon className="imageList__hover"/>
                                             </IconButton>
                                         }
                                     />
