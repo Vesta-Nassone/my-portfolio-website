@@ -28,6 +28,7 @@ export default function Projects() {
                             sx={{
                                 width: "auto",
                                 height: "auto",
+                                overflow: "visible",
                                 // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
                                 transform: 'translateZ(0)',
                             }}
