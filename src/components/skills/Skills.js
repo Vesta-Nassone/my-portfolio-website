@@ -27,12 +27,15 @@ export default function Skills() {
             <Box>
                 <Grid container={false} className={classes.root} spacing={2}  >
                     <Grid item={true} xs={12} spacing={2}>
-                        <ImageList sx={{
-                            width: "auto",
-                            height: "auto",
-                            // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
-                            transform: 'translateZ(0)',
-                        }}
+                        <ImageList
+                            sx={{
+                                width: "auto",
+                                height: "auto",
+                                // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
+                                transform: 'translateZ(0)',
+                            }}
+                            cols={3} 
+                            // rowHeight={164}
                             className="imageList__container"
                             gap={12}
                         >
@@ -50,9 +53,9 @@ export default function Skills() {
                                         className="icon__title"
                                         sx={{
                                             background:
-                                              'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
-                                              'rgba(250,0,100,0.3) 70%, rgba(0,0,0,0) 100%)',
-                                          }}
+                                                'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
+                                                'rgba(250,0,100,0.3) 70%, rgba(0,0,0,0) 100%)',
+                                        }}
                                     />
                                 </ImageListItem>
                             ))}
