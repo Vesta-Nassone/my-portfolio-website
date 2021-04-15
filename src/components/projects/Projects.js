@@ -24,7 +24,10 @@ export default function Projects() {
             <Grid container className={classes.root} spacing={2} >
                 <Grid item xs={12}>
                     <Grid justifyContent="center" spacing={2}>
-                        <ImageList sx={{ width: "auto", height: "auto" }}>
+                        <ImageList 
+                        sx={{ width: "auto", height: "auto" }}
+                        // gap={4}
+                        >
                             {itemData.map((item) => (
                                 <ImageListItem key={item.img}>
                                     <img
