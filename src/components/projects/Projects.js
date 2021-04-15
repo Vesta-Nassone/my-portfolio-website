@@ -36,6 +36,7 @@ export default function Projects() {
                                     <ImageListItemBar
                                         title={item.title}
                                         subtitle={item.author}
+                                        position="below"
                                         actionIcon={
                                             <IconButton
                                                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
