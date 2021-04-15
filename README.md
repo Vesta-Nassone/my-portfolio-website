@@ -8,3 +8,7 @@ Personal portfolio website made with ReactJS for frontend and Firebase. Also use
 
 #### Home Page:
 <img aline="center" src="https://i.imgur.com/PgpXXLb.png" alt="homepage">
+
+#### Skills Section:
+<img aline="center" src="https://i.imgur.com/7At1pqG.png" alt="skills">
+
