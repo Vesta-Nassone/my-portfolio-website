@@ -24,13 +24,14 @@ export default function Projects() {
             <Grid container className={classes.root} spacing={2} >
                 <Grid item xs={12}>
                     <Grid justifyContent="center" spacing={2}>
-                        <ImageList 
-                        sx={{ 
-                            width: "auto", 
-                            height: "auto",
-                        // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
-                        transform: 'translateZ(0)', }}
-                        gap={4}
+                        <ImageList
+                            sx={{
+                                width: "auto",
+                                height: "auto",
+                                // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
+                                transform: 'translateZ(0)',
+                            }}
+                            gap={4}
                         >
                             {itemData.map((item) => (
                                 <ImageListItem key={item.img}>
@@ -44,13 +45,19 @@ export default function Projects() {
                                         title={item.title}
                                         subtitle={item.author}
                                         position="below"
+                                        sx={{
+                                            background:
+                                                'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
+                                                'rgba(250,0,100,0.3) 70%, rgba(0,0,0,0) 100%)',
+                                        }}
                                         actionIcon={
                                             <IconButton
-                                                sx={{ 
-                                                    color: 'rgba(255, 255, 255, 0.54)' }}
+                                                sx={{
+                                                    color: 'rgba(255, 255, 255, 0.54)',
+                                                }}
                                                 aria-label={`info about ${item.title}`}
                                             >
-                                                <InfoIcon className="imageList__hover"/>
+                                                <InfoIcon className="imageList__hover" />
                                             </IconButton>
                                         }
                                     />
