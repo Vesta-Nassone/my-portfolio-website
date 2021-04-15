@@ -2,7 +2,17 @@
 
 Personal portfolio website made with ReactJS for frontend and Firebase. Also uses CSS, JS, and MaterialUI for styling and it emulates glassmorphism design.It is a dynamic site so that you can control the content of the site through the Firebase admin area.
 
+### Demo of this site available here
 ![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=vestanassone.netlify.app&style=for-the-badge&up_color=green&up_message=online&url=http%3A%2F%2Fvestanassone.netlify.app%2F)
+
+#### Installing
+
+Clone the repository using following command or download
+
+```
+https://github.com/Vesta-Nassone/my-portfolio-website.git
+```
+
 
 ### Overview of the Portfolio:
 
