@@ -61,7 +61,7 @@ export default function Projects() {
                                                 }}
                                                 aria-label={`info about ${item.title}`}
                                             >
-                                                <InfoIcon className="imageList__hover" />
+                                                <InfoIcon />
                                             </IconButton>
                                         }
                                     />
