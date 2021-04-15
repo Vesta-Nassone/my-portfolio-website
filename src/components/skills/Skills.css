@@ -32,3 +32,6 @@
   transform: scale(1.3);
   z-index: 5;
 }
+.imageList__container{
+  overflow-y: visible;
+}
