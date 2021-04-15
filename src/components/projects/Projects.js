@@ -25,7 +25,11 @@ export default function Projects() {
                 <Grid item xs={12}>
                     <Grid justifyContent="center" spacing={2}>
                         <ImageList 
-                        sx={{ width: "auto", height: "auto" }}
+                        sx={{ 
+                            width: "auto", 
+                            height: "auto",
+                        // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
+                        transform: 'translateZ(0)', }}
                         gap={4}
                         >
                             {itemData.map((item) => (
@@ -42,7 +46,8 @@ export default function Projects() {
                                         position="below"
                                         actionIcon={
                                             <IconButton
-                                                sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+                                                sx={{ 
+                                                    color: 'rgba(255, 255, 255, 0.54)' }}
                                                 aria-label={`info about ${item.title}`}
                                             >
                                                 <InfoIcon className="imageList__hover"/>
