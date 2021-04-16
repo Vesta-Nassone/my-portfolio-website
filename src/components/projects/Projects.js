@@ -11,8 +11,12 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        flexGrow: 1,
-        paddingBottom: 5
+        display: 'flex',
+        flexWrap: 'wrap',
+        width: "auto",
+        height: "auto",
+        justifyContent: 'space-around',
+        overflow: 'visible',
     },
 }));
 
@@ -21,54 +25,52 @@ export default function Projects() {
     return (
         <div className="projects__container">
             <h2 className="projects__heading"><u>Projects</u></h2>
-            <Grid container className={classes.root} spacing={2} >
-                <Grid item xs={12}>
-                    <Grid justifyContent="center" spacing={2}>
-                        <ImageList
-                            sx={{
-                                width: "auto",
-                                height: "auto",
-                                overflow: "visible",
-                                // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
-                                transform: 'translateZ(0)',
-                            }}
-                            cols={3}
-                            gap={6}
-                        >
-                            {itemData.map((item) => (
-                                <ImageListItem
-                                    key={item.img}
-                                    className="imageList__hover">
-                                    <img
-                                        srcSet={`${item.img}?w=248&auto=format 1x,
+            <Grid container={false} className={classes.root} spacing={2}  >
+                <Grid item={true} xs={12} spacing={2}>
+                    <ImageList
+                        sx={{
+                            width: "auto",
+                            height: "auto",
+                            overflow: "visible",
+                            // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
+                            transform: 'translateZ(0)',
+                        }}
+                        cols={3}
+                        gap={6}
+                    >
+                        {itemData.map((item) => (
+                            <ImageListItem key={item.img}
+                                className="imageList__hover">
+                                <img
+                                    srcSet={`${item.img}?w=248&auto=format 1x,
                 ${item.img}?w=248&auto=format&dpr=2 2x`}
-                                        alt={item.title}
-                                        loading="lazy"
-                                    />
-                                    <ImageListItemBar
-                                        title={item.title}
-                                        subtitle={item.author}
-                                        position="below"
-                                        sx={{
-                                            background:
-                                                'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
-                                                'rgba(250,0,100,0.3) 70%, rgba(0,0,0,0) 100%)',
-                                        }}
-                                        actionIcon={
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                                <ImageListItemBar
+                                    title={item.title}
+                                    subtitle={item.author}
+                                    className="icon__title"
+                                    position="below"
+                                    sx={{
+                                        background:
+                                            'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
+                                            'rgba(250,0,100,0.3) 70%, rgba(0,0,0,0) 100%)',
+                                    }}
+                                     actionIcon={
                                             <IconButton
                                                 sx={{
                                                     color: 'rgba(255, 255, 255, 0.54)',
                                                 }}
                                                 aria-label={`info about ${item.title}`}
                                             >
-                                                <InfoIcon />
+                                                <InfoIcon className="imageList__hover" />
                                             </IconButton>
                                         }
-                                    />
-                                </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Grid>
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
                 </Grid>
             </Grid >
         </div>
