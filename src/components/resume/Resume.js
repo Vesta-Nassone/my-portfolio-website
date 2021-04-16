@@ -12,7 +12,7 @@ export default function Resume() {
                 <strong><u>Summary</u></strong>
             </h4>
             <Typography component="p" className="typography">
-                My name is Benedito Vesta Nassone. I'm a BSc Computer Science and Engineering graduate from UCT. I am a highly versatile individual, able to execute tasks with minimal Supervision. <br /><br />From the moment I produced "Hello World" in the console of my first application using Python. I knew I was hooked into the realm of software development, but software has never been "just a job for me" or just a rewarding career financially, its offered an engaging challenge to continuously learn and improve my skills in creating high-quality software.
+                My name is Benedito Vesta Nassone. I'm a BSc Computer Science and Engineering graduate from UCT. I am a highly versatile individual, able to execute tasks with minimal Supervision.As a fast-learner I am able to speedily adapt to high-productive working environments while leveraging technology tools to deliver the best solution to client needs
             </Typography>
             <h4 className="resume__heading">
                 <strong><u>Experience</u></strong>
@@ -21,19 +21,20 @@ export default function Resume() {
                 <a href="www.tripplo.co">
                     <img src={tripplo} alt="Tripplo"></img>
                 </a>
-                <h6>03/2021 - Present</h6>
-                <Typography component="p">I am currently Interning at Tripplo Software as a <strong>Frontend Engineer</strong>
-                </Typography>
+                <h5>Frontend Engineer - Internship</h5>
+                <h6>03/2021 - 04/2021</h6>
                 <ul>
                     <li>
-                        Typescript
+                        Built React components using TypeScript and Tailwind css and ship them to npm.
                     </li>
                     <li>
-                        Javascript
+                        Tested components using React Testing Library and Jest.
                     </li>
-
                     <li>
-                        React
+                        Designed the new Tripplo's UI Library in Figma.
+                    </li>
+                    <li>
+                        Used Storybook to create and test UI components.
                     </li>
                 </ul>
             </div>
@@ -42,21 +43,20 @@ export default function Resume() {
                     <img src={blanktech} alt="BlankTech" style={{
                         width: '50px',
                         height: '50px'
-                    }}/>
+                    }} />
                 </a>
+                <h5>Backend Developer - Freelancing</h5>
                 <h6>04/2020 - 08/2020</h6>
-                <Typography component="p">I am currently Interning at Tripplo Software as a <strong>Frontend Engineer</strong>
-                </Typography>
                 <ul>
                     <li>
-                        Typescript
-                    </li>
-                    <li>
-                        Javascript
-                    </li>
+                        Oversaw back-end development using Django framework to maintain website integrity, security and efficiency.
 
+                    </li>
                     <li>
-                        React
+                        Store, retrieve and manipulate data for analysis of system capabilities and requirements.
+                    </li>
+                    <li>
+                        Writing supporting code for the web applications or web sites.
                     </li>
                 </ul>
             </div>
@@ -71,16 +71,14 @@ export default function Resume() {
             </Typography>
             <h6><strong><u>Relavent Coursework</u></strong></h6>
             <ul>
-                <li>
-                    Typescript
-                    </li>
-                <li>
-                    Javascript
-                    </li>
-
-                <li>
-                    React
-                    </li>
+                <li> Data Structures and Algorithms.</li>
+                <li> Database Management Systems.</li>
+                <li>Theory of Computation and Algorithms.</li>
+                <li> Parallel and Concurrent programming in Java.</li>
+                <li> Computer Networks and Operating Systems.</li>
+                <li> Computer Networks and Operating Systems.</li>
+                <li> Machine Learning in C++</li>
+                <li> Embedded and Information Systems</li>
             </ul>
         </div>
     );
