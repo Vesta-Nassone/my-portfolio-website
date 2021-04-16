@@ -5,27 +5,4 @@ body {
   -o-background-size: cover;
   background-size: cover;
   }
-  .projects__container{
-    position: fixed;
-    width: 500px;
-    height: 500px;
-    max-width: 90vw;
-    max-height:85vh;
-    padding: 2em;
-    overflow: auto;
-    font-family: 'Courier Prime', mono;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(0.5em);
-    border: 1px solid;
-    border-color: #fff8 transparent transparent #fff8;
-    border-radius: 1em;
-    box-shadow: 1em 1em .5em #0008;
-    cursor: pointer;
-  }
-  .projects__heading {
-    margin: 0 0 .50em;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
+ 
