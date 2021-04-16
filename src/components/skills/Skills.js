@@ -23,8 +23,8 @@ export default function Skills() {
     return (
         <div className="skills__container">
             <h2 className="skills__heading"><u>My Skills</u></h2>
-            <Grid container={false} className={classes.root} spacing={2}  >
-                <Grid item={true} xs={12} spacing={2}>
+            <Grid className={classes.root} spacing={2}  >
+                <Grid container item xs={12} spacing={2}>
                     <ImageList
                         sx={{
                             width: "auto",
