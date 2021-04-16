@@ -138,4 +138,59 @@ export default function Resume() {
     );
 }
 
-
+const itemData = [
+    {
+        img: 'https://www.sololearn.com/Certificate/1023-4326648/jpg/',
+        title: 'CSS',
+        author: '@Sololearn',
+        rows: 2,
+        cols: 2,
+        featured: true,
+    },
+    {
+        img: 'https://www.sololearn.com/certificates/course/en/4326648/1024/landscape/png',
+        title: 'JavaScript',
+        author: '@Sololearn',
+    },
+    {
+        img: 'https://www.sololearn.com/certificates/course/en/4326648/1073/landscape/png',
+        title: 'Python 3',
+        author: '@Sololearn',
+    },
+    {
+        img: 'https://udemy-certificate.s3.amazonaws.com/image/UC-a3ad8537-d2c2-4a76-ba8d-8b5a123c1bf6.jpg',
+        title: 'C++',
+        author: '@Sololearn',
+        cols: 2,
+    },
+    {
+        img: 'https://udemy-certificate.s3.amazonaws.com/image/UC-f92785ff-d30d-40cf-a282-dfbcebb48a56.jpg',
+        title: 'CMD',
+        author: '@Sololearn',
+        cols: 2,
+    },
+    {
+        img: 'https://udemy-certificate.s3.amazonaws.com/image/UC-4b5003d0-0186-4fee-ac0f-1ee89bd54b4a.jpg',
+        title: 'Web Dev',
+        author: '@Sololearn',
+        rows: 2,
+        cols: 2,
+        featured: true,
+    },
+    {
+        img: 'https://udemy-certificate.s3.amazonaws.com/image/UC-61b8b8a7-a72b-44d7-8f02-548799c37ee8.jpg',
+        title: 'Ethical Hacking',
+        author: '@Sololearn',
+        rows: 2,
+        cols: 2,
+        featured: true,
+    },
+    {
+        img: 'https://udemy-certificate.s3.amazonaws.com/image/UC-23754f4b-423c-45f6-90a7-fb9b0f556df8.jpg',
+        title: 'Java',
+        author: '@Sololearn',
+        rows: 2,
+        cols: 2,
+        featured: true,
+    },
+];
