@@ -6,7 +6,6 @@
   max-height:80vh;
   padding: 2em;
   overflow: auto;
-  font-family: 'Courier Prime', mono;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(0.5em);
