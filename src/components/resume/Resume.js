@@ -5,6 +5,12 @@ import tripplo from '../../assets/images/tripplo.svg';
 import uct from '../../assets/images/uct.png';
 import blanktech from '../../assets/images/blanktech.png';
 
+import ImageList from '@material-ui/core/ImageList';
+import ImageListItem from '@material-ui/core/ImageListItem';
+import ImageListItemBar from '@material-ui/core/ImageListItemBar';
+import IconButton from '@material-ui/core/IconButton';
+import InfoIcon from '@material-ui/icons/Info';
+
 export default function Resume() {
     return (
         <div className="resume__container">
@@ -12,12 +18,12 @@ export default function Resume() {
                 <strong><u>Summary</u></strong>
             </h4>
             <Typography component="p" className="typography">
-                My name is Benedito Vesta Nassone. I'm a BSc Computer Science and Engineering graduate from UCT. I am a highly versatile individual, able to execute tasks with minimal Supervision.As a fast-learner I am able to speedily adapt to high-productive working environments while leveraging technology tools to deliver the best solution to client needs
+                My name is Benedito Vesta Nassone. I'm a BSc Computer Science and Engineering graduate from UCT. I am a highly versatile individual, able to execute tasks with minimal Supervision. As a fast-learner I am able to speedily adapt to high-productive working environments while leveraging technology tools to deliver the best solution to client needs
             </Typography>
             <h4 className="resume__heading">
                 <strong><u>Experience</u></strong>
             </h4>
-            <div className="tripplo__experience">
+            <div className="work__experience">
                 <a href="www.tripplo.co">
                     <img src={tripplo} alt="Tripplo"></img>
                 </a>
@@ -38,12 +44,12 @@ export default function Resume() {
                     </li>
                 </ul>
             </div>
-            <div className="tripplo__experience">
+            <div className="work__experience">
                 <a href="https://www.blanktech.co.za">
                     <img src={blanktech} alt="BlankTech" style={{
                         width: '50px',
                         height: '50px'
-                    }} />
+                    }} /><strong>BlankTech</strong>
                 </a>
                 <h5>Backend Developer - Freelancing</h5>
                 <h6>04/2020 - 08/2020</h6>
@@ -80,6 +86,56 @@ export default function Resume() {
                 <li> Machine Learning in C++</li>
                 <li> Embedded and Information Systems</li>
             </ul>
+
+            <h4 className="resume__heading">
+                <strong><u>Certifications</u></strong>
+            </h4>
+            <ImageList
+                sx={{
+                    width: "auto",
+                    height: "auto",
+                    overflow: "hidden",
+                    // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
+                    transform: 'translateZ(0)',
+                }}
+                cols={2}
+                gap={6}
+            >
+                {itemData.map((item) => (
+                    <ImageListItem key={item.img}
+                        className="imageList__hover">
+                        <img
+                            srcSet={`${item.img}?w=248&auto=format 1x,
+                ${item.img}?w=248&auto=format&dpr=2 2x`}
+                            alt={item.title}
+                            loading="lazy"
+                        />
+                        <ImageListItemBar
+                            title={item.title}
+                            subtitle={item.author}
+                            className="icon__title"
+                            position="below"
+                            sx={{
+                                background:
+                                    'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
+                                    'rgba(250,0,100,0.3) 70%, rgba(0,0,0,0) 100%)',
+                            }}
+                            actionIcon={
+                                <IconButton
+                                    sx={{
+                                        color: 'rgba(255, 255, 255, 0.54)',
+                                    }}
+                                    aria-label={`info about ${item.title}`}
+                                >
+                                    <InfoIcon className="imageList__hover" />
+                                </IconButton>
+                            }
+                        />
+                    </ImageListItem>
+                ))}
+            </ImageList>
         </div>
     );
 }
+
+
