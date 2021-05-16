@@ -15,7 +15,12 @@ const Contact = () => {
         <li className="card__number">3400</li>
       </ul>
       <div>
-        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <form 
+          name="contact"
+          method="POST" 
+          data-netlify="true" 
+          data-netlify-recaptcha="true"
+        >
           <p>
             <input placeholder="Name" autoComplete="on" className="card__input" />
           </p>
