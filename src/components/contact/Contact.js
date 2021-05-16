@@ -15,7 +15,7 @@ const Contact = () => {
         <li className="card__number">3400</li>
       </ul>
       <div>
-        <form action="POST" data-netlify="true" target="_blank">
+        <form action="POST" data-netlify="true" data-netlify-recaptcha="true">
           <p>
             <input placeholder="Name" autoComplete="on" className="card__input" />
           </p>
@@ -28,10 +28,7 @@ const Contact = () => {
           <p>
             <input placeholder="Message" className="card__input" />
           </p>
-          <div data-netlify-recapture="true">
-
-          </div>
-
+          <div data-netlify-recaptcha="true"></div>
           <p>
             <button className="card__button">Send Message</button>
           </p>
