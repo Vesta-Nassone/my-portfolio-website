@@ -31,8 +31,8 @@ const useStyles = makeStyles((theme) => ({
         zIndex: 1,
     },
 }));
-const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1];
-const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+const calc = (/** @type {number} */ x, /** @type {number} */ y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1];
+const trans = (/** @type {any} */ x, /** @type {any} */ y, /** @type {any} */ s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 const Header = () => {
     const classes = useStyles();
