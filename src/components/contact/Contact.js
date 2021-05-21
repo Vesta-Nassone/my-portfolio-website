@@ -46,7 +46,7 @@ const Contact = () => {
             <IconButton className="social-icon-hover">
               <a
                 href="https://twitter.com/NassoneVesta"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target="_blank"
               ><FaTwitter size="2em" color="#1DA1F2" /></a>
             </IconButton>
@@ -54,7 +54,7 @@ const Contact = () => {
           <li>
             <IconButton className="social-icon-hover">
               <a href="https://github.com/Vesta-Nassone"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target="_blank"
               ><FaGithub size="2em" color="black" /></a>
             </IconButton>
@@ -62,7 +62,7 @@ const Contact = () => {
           <li>
             <IconButton className="social-icon-hover">
               <a href="https://wa.me/27681013400"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target="_blank"
               ><FaWhatsapp size="2em" color="green" /></a>
             </IconButton>
@@ -70,7 +70,7 @@ const Contact = () => {
           <li>
             <IconButton className="social-icon-hover">
               <a href="https://www.linkedin.com/in/vesta-nassone-77b6a115b/"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target="_blank"
               ><FaLinkedin size="2em" color="#0077B5" /></a>
             </IconButton>
