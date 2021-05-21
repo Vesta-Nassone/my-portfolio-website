@@ -52,19 +52,19 @@ Server will be available at http://127.0.0.1:3000 in your browser
 ### Overview of the Portfolio:
 
 #### Home Page:
-<img aline="center" src="https://i.imgur.com/PgpXXLb.png" alt="homepage">
+<img aline="center" src="https://drive.google.com/uc?export=view&id=1LcnFhK-H5APas9SiIAgKSIw6gQYFlRDq" alt="homepage">
 
 #### Skills Section:
-<img aline="center" src="https://i.imgur.com/7At1pqG.png" alt="skills">
+<img aline="center" src="https://drive.google.com/uc?export=view&id=1XTk2DnMQj5N_bdK2qbcKlI5trszQKKod" alt="skills">
 
 #### Projects Section:
 <img aline="center" src="https://i.imgur.com/1S57RqD.png" alt="projects">
 
 #### Resume Section:
-<img aline="center" src="https://i.imgur.com/djYOST6.png" alt="resume">
+<img aline="center" src="https://drive.google.com/uc?export=view&id=1KBOTCYgRlc4_1lY0K2nbvysHVySmVQWI" alt="resume">
 
 #### Contact Section:
-<img aline="center" src="https://i.imgur.com/djYOST6.png" alt="contact">
+<img aline="center" src="https://drive.google.com/uc?export=view&id=1A-ZuEr93kYvcZCzWiwo1zfOxyWA9MUe8" alt="contact">
 
 ## Author
 
