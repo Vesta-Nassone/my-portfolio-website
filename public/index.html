@@ -37,13 +37,23 @@
 </head>
 
 <body>
+  <form
+    name="contact"
+    method="POST"
+    netlify
+    netlify-honeypot="bot-field"
+    hidden
+  >
+    <input type="hidden" name="form-name" value="contact" />
+    <input placeholder="Name" autoComplete="on" className="card__input" />
+    <input placeholder="Email" autoComplete="on" className="card__input" />
+    <input placeholder="Subject" className="card__input" />
+    <input placeholder="Message" className="card__input" />
+    <div data-netlify-recaptcha="true"></div>
+    <button className="card__button" type='submit'>Send Message</button>
+  </form>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <!-- A little help for the Netlify post-processing bots -->
-  <form name="contact" netlify netlify-honeypot="bot-field" action='/' hidden>
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <textarea name="message"></textarea>
-  </form>
   <div id="root"></div>
   <!--
       This HTML file is a template.
