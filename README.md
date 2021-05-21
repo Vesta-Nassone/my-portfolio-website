@@ -20,9 +20,7 @@ Personal portfolio website made with ReactJS for frontend and Firebase. Also use
             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
 <img align="left" alt="react-spring" width="26px"
             src="https://camo.githubusercontent.com/973c99d17e4ce72d08c4433449045d8391948711f11ac5f328a585e2a7bc8663/68747470733a2f2f692e696d6775722e636f6d2f515a6f776e68672e706e67" />
-<img align="left" alt="react-spring" width="26px"
-            src="https://www.styled-components.com/" />
-<img align="left" alt="styled-components" width="26px"
+<img align="left" alt="material-ui" width="26px"
             src="https://camo.githubusercontent.com/58423e406b227112756822122631d9eca5ab83334a6f0d8f2a6305b086815747/68747470733a2f2f6d6174657269616c2d75692e636f6d2f7374617469632f6c6f676f2e737667" />
 <img align="left" alt="Git" width="26px"
             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
