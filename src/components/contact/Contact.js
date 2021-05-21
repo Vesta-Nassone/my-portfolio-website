@@ -28,10 +28,8 @@ function Contact() {
           name="contact"
           method="POST"
           action="/contact/?success=true"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-          netlify-honeypot="bot-field"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <input placeholder="Name" autoComplete="on" className="card__input" />
           <input placeholder="Email" autoComplete="on" className="card__input" />
           <input placeholder="Subject" className="card__input" />
