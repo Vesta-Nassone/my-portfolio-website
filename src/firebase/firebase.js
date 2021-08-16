@@ -17,3 +17,6 @@ var firebaseApp = firebase.initializeApp({
 
 // Initialize Firebase
 var db = firebaseApp.firestore();
+//firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+export { db };
