@@ -15,3 +15,5 @@ var firebaseApp = firebase.initializeApp({
     measurementId: "G-FHB9NGPSMV"
 });
 
+// Initialize Firebase
+var db = firebaseApp.firestore();
