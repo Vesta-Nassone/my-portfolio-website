@@ -117,7 +117,7 @@ const Header = () => {
 						<li>
 							<IconButton className="social-icon-hover">
 								<a
-									href="https://wa.me/27681013400"
+									href="https://wa.me/27691615499"
 									rel="noopener noreferrer"
 									target="_blank"
 								>
