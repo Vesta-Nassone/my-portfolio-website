@@ -19,9 +19,9 @@ function Contact() {
       )}
       <ul className="card__numbers ">
         <li className="card__number">+27</li>
-        <li className="card__number">68</li>
-        <li className="card__number">101</li>
-        <li className="card__number">3400</li>
+        <li className="card__number">69</li>
+        <li className="card__number">161</li>
+        <li className="card__number">5499</li>
       </ul>
       <div>
         <form
