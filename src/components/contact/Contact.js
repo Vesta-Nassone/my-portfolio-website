@@ -63,7 +63,7 @@ function Contact() {
           </li>
           <li>
             <IconButton className="social-icon-hover">
-              <a href="https://wa.me/27681013400"
+              <a href="https://wa.me/27691615499"
                 rel="noopener noreferrer"
                 target="_blank"
               ><FaWhatsapp size="2em" color="green" /></a>
