@@ -20,8 +20,8 @@ export default function Navbar() {
 								style={{
 									fontSize: 50,
 									color: green[600],
-                                }}
-                                className="social-icon-hover"
+								}}
+								className="social-icon-hover"
 							/>
 							<p>Home</p>
 						</Link>
@@ -29,25 +29,26 @@ export default function Navbar() {
 					<li>
 						<Link to="/skills">
 							<TuneIcon
-                                style={{ fontSize: 50, color: blue[800] }}
-                                className="social-icon-hover"
+								style={{ fontSize: 50, color: blue[800] }}
+								className="social-icon-hover"
 							/>
 							<p>Skills</p>
 						</Link>
 					</li>
 					<li>
 						<Link to="/projects">
-                            <Apps
-                                style={{ fontSize: 50, color: blue[200] }}
-                                className="social-icon-hover"/>
+							<Apps
+								style={{ fontSize: 50, color: blue[200] }}
+								className="social-icon-hover"
+							/>
 							<p>Projects</p>
 						</Link>
 					</li>
 					<li>
 						<Link to="/resume">
 							<InfoIcon
-                                style={{ fontSize: 50, color: red[500] }}
-                                className="social-icon-hover"
+								style={{ fontSize: 50, color: red[500] }}
+								className="social-icon-hover"
 							/>
 							<p>Resume</p>
 						</Link>
@@ -55,8 +56,8 @@ export default function Navbar() {
 					<li>
 						<Link to="/games">
 							<GamesIcon
-                                style={{ fontSize: 50, color: orange[600] }}
-                                className="social-icon-hover"
+								style={{ fontSize: 50, color: orange[600] }}
+								className="social-icon-hover"
 							/>
 							<p>Games</p>
 						</Link>
@@ -64,8 +65,8 @@ export default function Navbar() {
 					<li>
 						<Link to="/contact">
 							<ContactPhoneIcon
-                                style={{ fontSize: 50, color: yellow[700] }}
-                                className="social-icon-hover"
+								style={{ fontSize: 50, color: yellow[700] }}
+								className="social-icon-hover"
 							/>
 							<p>Contact</p>
 						</Link>
