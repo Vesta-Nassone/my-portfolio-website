@@ -44,7 +44,7 @@ function Contact() {
 
       <div>
         <ul className="card__socialIcons">
-          <li>
+          <li> 
             <IconButton className="social-icon-hover">
               <a
                 href="https://twitter.com/NassoneVesta"
