@@ -1,7 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Iceland&display=swap');
 
 .sidebar{
- 
+    position:fixed;
+    height: auto;
+    width:150px;
+    max-width: 12%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index:1;
+    overflow:auto;
+    padding-right: 12px;
+    font-family: 'Iceland', cursive;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(0.5em);
+    border: 1px solid;
+    border-color: #fff8 transparent transparent #fff8;
+    border-radius: 1em;
+    box-shadow: 1em 1em .5em #0008;
+}
 .sidebar__icons {
     padding: 0;
     margin: 1em 0;
