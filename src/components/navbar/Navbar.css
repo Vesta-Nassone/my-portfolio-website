@@ -53,7 +53,10 @@
     width:100%;
     z-index:1
 }
-.
+.top{
+    overflow: auto;
+    top:0
+}
 .bottom{
     bottom:0
 }
