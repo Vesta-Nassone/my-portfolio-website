@@ -1,8 +1,9 @@
 body {
 	margin: 0;
-	background: url("https://imgur.com/dhNpy8q.jpg") no-repeat center center fixed;
+	background: url("https://imgur.com/dhNpy8q.jpg") no-repeat center center
+		fixed;
 	/*Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS. */
-  line-height: 1.3em;
+	line-height: 1.3em;
 	transform: translateZ(0);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -10,6 +11,24 @@ body {
 	background-size: cover;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+glass__container {
+	position: fixed;
+	width: 500px;
+	height: 500px;
+	max-width: 90vw;
+	max-height: 85vh;
+	padding: 2em;
+	overflow: auto;
+	font-family: "Courier Prime", mono;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(0.5em);
+	border: 1px solid;
+	border-color: #fff8 transparent transparent #fff8;
+	border-radius: 1em;
+	box-shadow: 1em 1em 0.5em #0008;
+	cursor: pointer;
 }
 
 a {
