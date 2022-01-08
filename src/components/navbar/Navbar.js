@@ -1,12 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import GamesIcon from "@material-ui/icons/Games";
-import ContactPhoneIcon from "@material-ui/icons/ContactPhone";
-import InfoIcon from "@material-ui/icons/Info";
-import TuneIcon from "@material-ui/icons/Tune";
-import Apps from "@material-ui/icons/Apps";
-import HomeIcon from "@material-ui/icons/Home";
 import {
 	FaHome,
 	FaAlignLeft,
