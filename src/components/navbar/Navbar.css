@@ -15,6 +15,7 @@
 	font-family: "Iceland", cursive;
 	color: #fff;
 	background-color: rgba(0, 0, 0, 0.2);
+	-moz-backdrop-filter: blur(0.5em);
 	backdrop-filter: blur(0.5em);
 	border: 1px solid;
 	border-color: #fff8 transparent transparent #fff8;
