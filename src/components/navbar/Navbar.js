@@ -62,7 +62,7 @@ export default function Navbar() {
 								size="2.5em"
 								color="purple"
 							/>
-							<p>Games</p>
+							<p>Goals</p>
 						</Link>
 					</li>
 					<li>
