@@ -19,7 +19,7 @@ export default function Navbar() {
 						<Link to="/">
 							<FaHome
 								className="social-icon-hover"
-								size="2em"
+								size="2.5em"
 								color="green"
 							/>
 							<p>Home</p>
@@ -29,7 +29,7 @@ export default function Navbar() {
 						<Link to="/skills">
 							<FaAlignLeft
 								className="social-icon-hover"
-								size="2em"
+								size="2.5em"
 								color="blue"
 							/>
 							<p>Skills</p>
@@ -39,7 +39,7 @@ export default function Navbar() {
 						<Link to="/projects">
 							<FaFolderPlus
 								className="social-icon-hover"
-								size="2em"
+								size="2.5em"
 								color="yellow"
 							/>
 							<p>Projects</p>
@@ -49,7 +49,7 @@ export default function Navbar() {
 						<Link to="/resume">
 							<FaUserCog
 								className="social-icon-hover"
-								size="2em"
+								size="2.5em"
 								color="cyan"
 							/>
 							<p>Resume</p>
@@ -59,7 +59,7 @@ export default function Navbar() {
 						<Link to="/games">
 							<FaTasks
 								className="social-icon-hover"
-								size="2em"
+								size="2.5em"
 								color="purple"
 							/>
 							<p>Games</p>
@@ -69,7 +69,7 @@ export default function Navbar() {
 						<Link to="/contact">
 							<FaPhoneSquare
 								className="social-icon-hover"
-								size="2em"
+								size="2.5em"
 								color="orange"
 							/>
 							<p>Contact</p>
