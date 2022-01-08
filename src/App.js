@@ -5,7 +5,7 @@ import Home from "./components/header/Home.js";
 import Contact from "./components/contact/Contact.js";
 import Skills from "./components/skills/Skills.js";
 import Resume from "./components/resume/Resume.js";
-import Games from "./components/games/Games.js";
+import Goals from "./components/games/Goals.js";
 import Projects from "./components/projects/Projects";
 import "./App.css";
 
@@ -27,7 +27,7 @@ function App() {
 						<Route exact path="/contact" component={Contact} />
 						<Route exact path="/skills" component={Skills} />
 						<Route exact path="/resume" component={Resume} />
-						<Route exact path="/games" component={Games} />
+						<Route exact path="/goals" component={Goals} />
 						<Route exact path="/projects" component={Projects} />
 					</Switch>
 				</Router>
