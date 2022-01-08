@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import GamesIcon from "@material-ui/icons/Games";
 import ContactPhoneIcon from "@material-ui/icons/ContactPhone";
@@ -7,7 +8,15 @@ import TuneIcon from "@material-ui/icons/Tune";
 import Apps from "@material-ui/icons/Apps";
 import HomeIcon from "@material-ui/icons/Home";
 import { green, red, blue, orange, yellow } from "@material-ui/core/colors";
-import { Link } from "react-router-dom";
+import {
+	FaHome,
+	FaAlignLeft,
+	FaFolderPlus,
+	FaUserCog,
+	FaTasks,
+	FaPhoneSquare,
+} from "react-icons/fa";
+
 
 export default function Navbar() {
 	return (
@@ -16,57 +25,60 @@ export default function Navbar() {
 				<ul className="sidebar__icons">
 					<li>
 						<Link to="/">
-							<HomeIcon
-								style={{
-									fontSize: 50,
-									color: green[600],
-								}}
+							<FaHome
 								className="social-icon-hover"
+								size="2em"
+								color="green"
 							/>
 							<p>Home</p>
 						</Link>
 					</li>
 					<li>
 						<Link to="/skills">
-							<TuneIcon
-								style={{ fontSize: 50, color: blue[800] }}
+							<FaAlignLeft
 								className="social-icon-hover"
+								size="2em"
+								color="blue"
 							/>
 							<p>Skills</p>
 						</Link>
 					</li>
 					<li>
 						<Link to="/projects">
-							<Apps
-								style={{ fontSize: 50, color: blue[200] }}
+							<FaFolderPlus
 								className="social-icon-hover"
+								size="2em"
+								color="yellow"
 							/>
 							<p>Projects</p>
 						</Link>
 					</li>
 					<li>
 						<Link to="/resume">
-							<InfoIcon
-								style={{ fontSize: 50, color: red[500] }}
+							<FaUserCog
 								className="social-icon-hover"
+								size="2em"
+								color="cyan"
 							/>
 							<p>Resume</p>
 						</Link>
 					</li>
 					<li>
 						<Link to="/games">
-							<GamesIcon
-								style={{ fontSize: 50, color: orange[600] }}
+							<FaTasks
 								className="social-icon-hover"
+								size="2em"
+								color="purple"
 							/>
 							<p>Games</p>
 						</Link>
 					</li>
 					<li>
 						<Link to="/contact">
-							<ContactPhoneIcon
-								style={{ fontSize: 50, color: yellow[700] }}
+							<FaPhoneSquare
 								className="social-icon-hover"
+								size="2em"
+								color="orange"
 							/>
 							<p>Contact</p>
 						</Link>
