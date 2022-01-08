@@ -1,10 +1,10 @@
 import React from 'react'
-import "./Games.css"
+import "./Goals.css"
 
 export default function Games() {
     return (
-        <div className="games__container">
-            <h1 className="skills__heading">Play Some Games</h1>
+        <div className="goals__container">
+            <h1 className="skills__heading">2022 Goals</h1>
         </div>
     )
 }
