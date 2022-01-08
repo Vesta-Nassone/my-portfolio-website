@@ -93,48 +93,45 @@ export default function Navbar() {
 					<ul className="card__numbers">
 						<li>
 							<Link to="/">
-								<HomeIcon
-									style={{ fontSize: 50, color: green[600] }}
+								<FaHome
+									
 								/>
 							</Link>
 						</li>
 						<li>
 							<Link to="/skills">
-								<TuneIcon
-									style={{ fontSize: 50, color: blue[500] }}
+								<FaAlignLeft
+									
 								/>
 							</Link>
 						</li>
 						<li>
 							<Link to="/projects">
 								<p>
-									<Apps
-										style={{
-											fontSize: 50,
-											color: blue[600],
-										}}
+									<FaFolderPlus
+										
 									/>
 								</p>
 							</Link>
 						</li>
 						<li>
 							<Link to="/resume">
-								<InfoIcon
-									style={{ fontSize: 50, color: red[400] }}
+								<FaUserCog
+									
 								/>
 							</Link>
 						</li>
 						<li>
 							<Link to="/games">
-								<GamesIcon
-									style={{ fontSize: 50, color: orange[600] }}
+								<FaTasks
+									
 								/>
 							</Link>
 						</li>
 						<li>
 							<Link to="/contact">
-								<ContactPhoneIcon
-									style={{ fontSize: 50, color: yellow[400] }}
+								<FaPhoneSquare
+									
 								/>
 							</Link>
 						</li>
