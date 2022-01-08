@@ -94,14 +94,16 @@ export default function Navbar() {
 						<li>
 							<Link to="/">
 								<FaHome
-									
+									size="2em"
+									color="green"
 								/>
 							</Link>
 						</li>
 						<li>
 							<Link to="/skills">
 								<FaAlignLeft
-									
+									size="2em"
+									color="blue"
 								/>
 							</Link>
 						</li>
@@ -109,7 +111,8 @@ export default function Navbar() {
 							<Link to="/projects">
 								<p>
 									<FaFolderPlus
-										
+										size="2em"
+										color="yellow"
 									/>
 								</p>
 							</Link>
@@ -117,21 +120,24 @@ export default function Navbar() {
 						<li>
 							<Link to="/resume">
 								<FaUserCog
-									
+									size="2em"
+									color="cyan"
 								/>
 							</Link>
 						</li>
 						<li>
 							<Link to="/games">
 								<FaTasks
-									
+									size="2em"
+									color="cyan"
 								/>
 							</Link>
 						</li>
 						<li>
 							<Link to="/contact">
 								<FaPhoneSquare
-									
+									size="2em"
+									color="yellow"
 								/>
 							</Link>
 						</li>
