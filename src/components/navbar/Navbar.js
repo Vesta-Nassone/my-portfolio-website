@@ -16,7 +16,7 @@ export default function Navbar() {
 			<nav className="sidebar hide-small center">
 				<ul className="sidebar__icons">
 					<li>
-						<Link to="/">
+						<Link to="/" aria-label="Home">
 							<FaHome
 								className="social-icon-hover"
 								size="2.5em"
@@ -26,7 +26,7 @@ export default function Navbar() {
 						</Link>
 					</li>
 					<li>
-						<Link to="/skills">
+						<Link to="/skills" aria-label="Skills">
 							<FaAlignLeft
 								className="social-icon-hover"
 								size="2.5em"
@@ -36,7 +36,7 @@ export default function Navbar() {
 						</Link>
 					</li>
 					<li>
-						<Link to="/projects">
+						<Link to="/projects" aria-label="Projects">
 							<FaFolderPlus
 								className="social-icon-hover"
 								size="2.5em"
@@ -46,7 +46,7 @@ export default function Navbar() {
 						</Link>
 					</li>
 					<li>
-						<Link to="/resume">
+						<Link to="/resume" aria-label="Resume">
 							<FaUserCog
 								className="social-icon-hover"
 								size="2.5em"
@@ -56,7 +56,7 @@ export default function Navbar() {
 						</Link>
 					</li>
 					<li>
-						<Link to="/games">
+						<Link to="/games" aria-label="Goals">
 							<FaTasks
 								className="social-icon-hover"
 								size="2.5em"
@@ -66,7 +66,7 @@ export default function Navbar() {
 						</Link>
 					</li>
 					<li>
-						<Link to="/contact">
+						<Link to="/contact" aria-label="Contacts">
 							<FaPhoneSquare
 								className="social-icon-hover"
 								size="2.5em"
@@ -86,34 +86,32 @@ export default function Navbar() {
 				<div className="center">
 					<ul className="card__numbers">
 						<li>
-							<Link to="/">
+							<Link to="/" aria-label="Home">
 								<FaHome size="2em" color="green" />
 							</Link>
 						</li>
 						<li>
-							<Link to="/skills">
+							<Link to="/skills" aria-label="Skills">
 								<FaAlignLeft size="2em" color="blue" />
 							</Link>
 						</li>
 						<li>
-							<Link to="/projects">
-								<p>
-									<FaFolderPlus size="2em" color="yellow" />
-								</p>
+							<Link to="/projects" aria-label="Projects">
+								<FaFolderPlus size="2em" color="yellow" />
 							</Link>
 						</li>
 						<li>
-							<Link to="/resume">
+							<Link to="/resume" aria-label="Resume">
 								<FaUserCog size="2em" color="cyan" />
 							</Link>
 						</li>
 						<li>
-							<Link to="/games">
+							<Link to="/games" aria-label="Goals">
 								<FaTasks size="2em" color="cyan" />
 							</Link>
 						</li>
 						<li>
-							<Link to="/contact">
+							<Link to="/contact" aria-label="Contacts">
 								<FaPhoneSquare size="2em" color="yellow" />
 							</Link>
 						</li>
