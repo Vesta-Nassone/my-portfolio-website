@@ -5,7 +5,7 @@ import Home from "./components/header/Home.js";
 import Contact from "./components/contact/Contact.js";
 import Skills from "./components/skills/Skills.js";
 import Resume from "./components/resume/Resume.js";
-import Goals from "./components/games/Goals.js";
+import Goals from "./components/goals/Goals.js";
 import Projects from "./components/projects/Projects";
 import "./App.css";
 
