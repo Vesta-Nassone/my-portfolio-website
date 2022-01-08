@@ -80,41 +80,41 @@ export default function Navbar() {
 
 			{/*Navbar on small screens (Hidden on medium and large screens)*/}
 			<div
-				className="small__sidebar w3-bottom w3-hide-large w3-hide-medium"
+				className="small__sidebar bottom w3-hide-large w3-hide-medium"
 				id="myNavbar"
 			>
 				<div className="w3-bar w3-opacity w3-hover-opacity hover-black w3-center w3-small">
 					<ul className="card__numbers">
 						<li>
 							<Link to="/">
-								<FaHome size="2em" color="green" />
+								<FaHome size="3em" color="green" />
 							</Link>
 						</li>
 						<li>
 							<Link to="/skills">
-								<FaAlignLeft size="2em" color="blue" />
+								<FaAlignLeft size="3em" color="blue" />
 							</Link>
 						</li>
 						<li>
 							<Link to="/projects">
 								<p>
-									<FaFolderPlus size="2em" color="yellow" />
+									<FaFolderPlus size="3em" color="yellow" />
 								</p>
 							</Link>
 						</li>
 						<li>
 							<Link to="/resume">
-								<FaUserCog size="2em" color="cyan" />
+								<FaUserCog size="3em" color="cyan" />
 							</Link>
 						</li>
 						<li>
 							<Link to="/games">
-								<FaTasks size="2em" color="cyan" />
+								<FaTasks size="3em" color="cyan" />
 							</Link>
 						</li>
 						<li>
 							<Link to="/contact">
-								<FaPhoneSquare size="2em" color="yellow" />
+								<FaPhoneSquare size="3em" color="yellow" />
 							</Link>
 						</li>
 					</ul>
