@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./Navbar.css";
 import {
-	FaHome,
 	FaAlignLeft,
 	FaFolderPlus,
-	FaUserCog,
-	FaTasks,
+	FaHome,
 	FaPhoneSquare,
+	FaTasks,
+	FaUserCog,
 } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 export default function Navbar() {
 	return (
@@ -78,6 +77,7 @@ export default function Navbar() {
 					</li>
 				</ul>
 			</nav>
+
 			{/*Navbar on small screens (Hidden on medium and large screens)*/}
 			<div
 				className="small__sidebar w3-bottom w3-hide-large w3-hide-medium"
@@ -87,52 +87,34 @@ export default function Navbar() {
 					<ul className="card__numbers">
 						<li>
 							<Link to="/">
-								<FaHome
-									size="2em"
-									color="green"
-								/>
+								<FaHome size="2em" color="green" />
 							</Link>
 						</li>
 						<li>
 							<Link to="/skills">
-								<FaAlignLeft
-									size="2em"
-									color="blue"
-								/>
+								<FaAlignLeft size="2em" color="blue" />
 							</Link>
 						</li>
 						<li>
 							<Link to="/projects">
 								<p>
-									<FaFolderPlus
-										size="2em"
-										color="yellow"
-									/>
+									<FaFolderPlus size="2em" color="yellow" />
 								</p>
 							</Link>
 						</li>
 						<li>
 							<Link to="/resume">
-								<FaUserCog
-									size="2em"
-									color="cyan"
-								/>
+								<FaUserCog size="2em" color="cyan" />
 							</Link>
 						</li>
 						<li>
 							<Link to="/games">
-								<FaTasks
-									size="2em"
-									color="cyan"
-								/>
+								<FaTasks size="2em" color="cyan" />
 							</Link>
 						</li>
 						<li>
 							<Link to="/contact">
-								<FaPhoneSquare
-									size="2em"
-									color="yellow"
-								/>
+								<FaPhoneSquare size="2em" color="yellow" />
 							</Link>
 						</li>
 					</ul>
