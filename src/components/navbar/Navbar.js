@@ -13,7 +13,7 @@ import "./Navbar.css";
 export default function Navbar() {
 	return (
 		<div className="top">
-			<nav className="sidebar w3-bar-block w3-small w3-hide-small w3-center">
+			<nav className="sidebar w3-small hide-small w3-center">
 				<ul className="sidebar__icons">
 					<li>
 						<Link to="/">
