@@ -7,7 +7,6 @@ import InfoIcon from "@material-ui/icons/Info";
 import TuneIcon from "@material-ui/icons/Tune";
 import Apps from "@material-ui/icons/Apps";
 import HomeIcon from "@material-ui/icons/Home";
-import { green, red, blue, orange, yellow } from "@material-ui/core/colors";
 import {
 	FaHome,
 	FaAlignLeft,
