@@ -3,9 +3,10 @@
 .sidebar{
     position:fixed;
     height: auto;
-    width:150px;
+    width:120px;
     max-width: 12%;
     top: 50%;
+    /* margin-left: 10px; */
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index:1;
