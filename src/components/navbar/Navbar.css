@@ -105,6 +105,18 @@
     }
 }
 
+@media (min-width: 993px) {
+    .w3-modal-content {
+        width: 900px;
+    }
+    .hide-large {
+        display: none !important;
+    }
+    .w3-sidebar.w3-collapse {
+        display: block !important;
+    }
+}
+
 .hover-black:hover{
     color:#fff;
     background-color:#000
