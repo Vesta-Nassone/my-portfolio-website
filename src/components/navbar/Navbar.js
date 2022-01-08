@@ -83,7 +83,7 @@ export default function Navbar() {
 				className="small__sidebar bottom hide-large hide-medium"
 				id="myNavbar"
 			>
-				<div className="w3-bar w3-opacity w3-hover-opacity hover-black w3-center w3-small">
+				<div className="w3-opacity w3-hover-opacity hover-black w3-center w3-small">
 					<ul className="card__numbers">
 						<li>
 							<Link to="/">
