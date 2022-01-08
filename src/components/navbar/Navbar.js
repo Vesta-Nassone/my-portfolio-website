@@ -80,7 +80,7 @@ export default function Navbar() {
 
 			{/*Navbar on small screens (Hidden on medium and large screens)*/}
 			<div
-				className="small__sidebar bottom hide-large w3-hide-medium"
+				className="small__sidebar bottom hide-large hide-medium"
 				id="myNavbar"
 			>
 				<div className="w3-bar w3-opacity w3-hover-opacity hover-black w3-center w3-small">
