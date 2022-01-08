@@ -1,123 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Iceland&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Iceland&display=swap");
 
-.sidebar{
-    position:fixed;
-    height: auto;
-    width:120px;
-    max-width: 12%;
-    top: 50%;
-    margin-left: 10px;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    z-index:1;
-    overflow:auto;
-    padding-right: 12px;
-    font-family: 'Iceland', cursive;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(0.5em);
-    border: 1px solid;
-    border-color: #fff8 transparent transparent #fff8;
-    border-radius: 1em;
-    box-shadow: 1em 1em .5em #0008;
+.sidebar {
+	position: fixed;
+	height: auto;
+	width: 120px;
+	max-width: 12%;
+	top: 50%;
+	margin-left: 10px;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 1;
+	overflow: auto;
+	padding-right: 12px;
+	font-family: "Iceland", cursive;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(0.5em);
+	border: 1px solid;
+	border-color: #fff8 transparent transparent #fff8;
+	border-radius: 1em;
+	box-shadow: 1em 1em 0.5em #0008;
 }
 .sidebar__icons {
-    padding: 0;
-    margin: 1em 0;
-    list-style: none;
-    display: inline-block;
-    justify-content: center;
-    font-family: 'Iceland', cursive;
-    font-size: 20px;
+	padding: 0;
+	margin: 1em 0;
+	list-style: none;
+	display: inline-block;
+	justify-content: center;
+	font-family: "Iceland", cursive;
+	font-size: 20px;
 }
-.small__sidebar{
-    position:fixed;
-    width:100%;
-    max-height: 10%;
-    bottom: 0;
-    margin: 2px 1px 2px;
-    padding: 2px;
-    z-index:1;
-    font-family: 'Iceland', cursive;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(0.5em);
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(0.5em);
-    border: 1px solid;
-    border-color: #fff8 transparent transparent #fff8;
-    border-radius: 1em;
-    box-shadow: 1em 1em .5em #0008;
+.small__sidebar {
+	position: fixed;
+	width: 100%;
+	max-height: 10%;
+	bottom: 0;
+	margin: 2px 1px 2px;
+	padding: 2px;
+	z-index: 1;
+	font-family: "Iceland", cursive;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(0.5em);
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(0.5em);
+	border: 1px solid;
+	border-color: #fff8 transparent transparent #fff8;
+	border-radius: 1em;
+	box-shadow: 1em 1em 0.5em #0008;
 }
-.top,.bottom{
-    position:fixed;
-    width:100%;
-    z-index:1
-}
-.top{
-    overflow: auto;
-    top:0
+
+.top {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	top: 0;
 }
 
 .bottom {
-    position: fixed;
-    width: 90%;
-    z-index: 1;
-    padding: 4px;
-    margin: 10px;
-    left: 3%;
-    height: 50px;
+	position: fixed;
+	width: 90%;
+	z-index: 1;
+	padding: 4px;
+	margin: 10px;
+	left: 3%;
+	height: 50px;
 }
 .center {
-    text-align: center !important;
+	text-align: center !important;
 }
 @media (max-width: 600px) {
-    .w3-modal-content {
-        margin: 0 10px;
-        width: auto !important;
-    }
-    .w3-modal {
-        padding-top: 30px;
-    }
-    .w3-dropdown-hover.w3-mobile .w3-dropdown-content,
-    .w3-dropdown-click.w3-mobile .w3-dropdown-content {
-        position: relative;
-    }
-    .hide-small {
-        display: none !important;
-    }
-    .w3-mobile {
-        display: block;
-        width: 100% !important;
-    }
-    .w3-bar-item.w3-mobile,
-    .w3-dropdown-hover.w3-mobile,
-    .w3-dropdown-click.w3-mobile {
-        text-align: center;
-    }
-    .w3-dropdown-hover.w3-mobile,
-    .w3-dropdown-hover.w3-mobile .w3-btn,
-    .w3-dropdown-hover.w3-mobile .w3-button,
-    .w3-dropdown-click.w3-mobile,
-    .w3-dropdown-click.w3-mobile .w3-btn,
-    .w3-dropdown-click.w3-mobile .w3-button {
-        width: 100%;
-    }
+	.hide-small {
+		display: none !important;
+	}
 }
 
 @media (min-width: 993px) {
-    .w3-modal-content {
-        width: 900px;
-    }
-    .hide-large {
-        display: none !important;
-    }
-    .w3-sidebar.w3-collapse {
-        display: block !important;
-    }
+	.hide-large {
+		display: none !important;
+	}
+	.sidebar {
+		display: block !important;
+	}
 }
 @media (max-width: 992px) and (min-width: 601px) {
-    .hide-medium {
-        display: none !important;
-    }
+	.hide-medium {
+		display: none !important;
+	}
 }
