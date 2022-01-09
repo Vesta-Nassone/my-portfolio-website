@@ -71,7 +71,7 @@ function Contact() {
           </li>
           <li>
             <IconButton className="social-icon-hover">
-              <a href="https://www.linkedin.com/in/vesta-nassone-77b6a115b/"
+              <a href="https://www.linkedin.com/in/vesta-nassone/"
                 rel="noopener noreferrer"
                 target="_blank"
               ><FaLinkedin size="2em" color="#0077B5" /></a>
