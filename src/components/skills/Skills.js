@@ -22,7 +22,7 @@ export default function Skills() {
     const classes = useStyles();
     return (
         <div className="skills__container">
-            <h2 className="skills__heading"><u>My Skills</u></h2>
+            <h2 className="skills__heading"><u>My Skills</u></h2><br/>
             <Grid className={classes.root} spacing={2}  >
                 <Grid container item xs={12} spacing={2}>
                     <ImageList
@@ -145,7 +145,7 @@ const itemData = [
         cols: 2,
     },
     {
-        img: 'https://camo.githubusercontent.com/58423e406b227112756822122631d9eca5ab83334a6f0d8f2a6305b086815747/68747470733a2f2f6d6174657269616c2d75692e636f6d2f7374617469632f6c6f676f2e737667',
+        img: 'https://camo.githubusercontent.com/306dedb9426f1d93a981d305a0a18164932ece8dca4d5fd820b1d3c36625b218/68747470733a2f2f6d75692e636f6d2f7374617469632f6c6f676f2e737667',
         title: 'MaterialUI',
         cols: 2,
     },
