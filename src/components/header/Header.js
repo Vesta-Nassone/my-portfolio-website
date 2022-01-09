@@ -128,7 +128,7 @@ const Header = () => {
 						<li>
 							<IconButton className="social-icon-hover">
 								<a
-									href="https://www.linkedin.com/in/vesta-nassone-77b6a115b/"
+									href="https://www.linkedin.com/in/vesta-nassone/"
 									rel="noopener noreferrer"
 									target="_blank"
 								>
