@@ -24,7 +24,7 @@ export default function Projects() {
     const classes = useStyles();
     return (
         <div className="projects__container">
-            <h2 className="projects__heading"><u>Projects</u></h2>
+            <h2 className="projects__heading"><u>Projects</u></h2><br/>
             <Grid className={classes.root} spacing={2}  >
                 <Grid container item xs={12} spacing={2}>
                     <ImageList
