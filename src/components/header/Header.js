@@ -122,7 +122,7 @@ const Header = () => {
 							</IconButton>
 						</li>
 						<li>
-							<IconButton className="social-icon-hover">
+							<IconButton className="social-icon-hover" aria-label="Linkedin">
 								<a
 									href="https://www.linkedin.com/in/vesta-nassone/"
 									rel="noopener noreferrer"
