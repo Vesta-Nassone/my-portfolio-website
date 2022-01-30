@@ -88,45 +88,60 @@ const Header = () => {
 				<div>
 					<ul className="card__socialIcons">
 						<li>
-							<IconButton className="social-icon-hover" aria-label="Twitter">
+							<IconButton
+								className="social-icon-hover"
+								aria-label="Twitter"
+							>
 								<a
 									href="https://twitter.com/NassoneVesta"
 									rel="noopener noreferrer"
 									target="_blank"
-
+									aria-label="Twitter"
 								>
 									<FaTwitter size="2em" color="#1DA1F2" />
 								</a>
 							</IconButton>
 						</li>
 						<li>
-							<IconButton className="social-icon-hover" aria-label="GitHub">
+							<IconButton
+								className="social-icon-hover"
+								aria-label="GitHub"
+							>
 								<a
 									href="https://github.com/Vesta-Nassone"
 									rel="noopener noreferrer"
 									target="_blank"
+									aria-label="GitHub"
 								>
 									<FaGithub size="2em" color="black" />
 								</a>
 							</IconButton>
 						</li>
 						<li>
-							<IconButton className="social-icon-hover" aria-label="Whatsapp">
+							<IconButton
+								className="social-icon-hover"
+								aria-label="Whatsapp"
+							>
 								<a
 									href="https://wa.me/27691615499"
 									rel="noopener noreferrer"
 									target="_blank"
+									aria-label="Whatsapp"
 								>
 									<FaWhatsapp size="2em" color="green" />
 								</a>
 							</IconButton>
 						</li>
 						<li>
-							<IconButton className="social-icon-hover" aria-label="Linkedin">
+							<IconButton
+								className="social-icon-hover"
+								aria-label="Linkedin"
+							>
 								<a
 									href="https://www.linkedin.com/in/vesta-nassone/"
 									rel="noopener noreferrer"
 									target="_blank"
+									aria-label="Linkedin"
 								>
 									<FaLinkedin size="2em" color="#0077B5" />
 								</a>
