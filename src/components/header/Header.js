@@ -60,7 +60,7 @@ const Header = () => {
 					<Avatar
 						src={avatar}
 						alt="Vesta Nassone"
-						
+						sx={{ width: 100, height: 100 }}
 					/>
 				</Grid>
 				<Typography className={classes.title} variant="h4">
