@@ -12,11 +12,6 @@ import IconButton from "@material-ui/core/IconButton";
 import { useSpring, animated, config } from "react-spring";
 
 const useStyles = makeStyles((theme) => ({
-	avatar: {
-		width: theme.spacing(20),
-		height: theme.spacing(20),
-		margin: theme.spacing(1),
-	},
 	title: {
 		color: "red",
 	},
@@ -63,9 +58,9 @@ const Header = () => {
 			<Box className={classes.typedContainer}>
 				<Grid container justifyContent="center">
 					<Avatar
-						className={classes.avatar}
 						src={avatar}
 						alt="Vesta Nassone"
+						
 					/>
 				</Grid>
 				<Typography className={classes.title} variant="h4">
