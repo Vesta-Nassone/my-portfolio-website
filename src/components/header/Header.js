@@ -111,7 +111,7 @@ const Header = () => {
 							</IconButton>
 						</li>
 						<li>
-							<IconButton className="social-icon-hover">
+							<IconButton className="social-icon-hover" aria-label="Whatsapp">
 								<a
 									href="https://wa.me/27691615499"
 									rel="noopener noreferrer"
