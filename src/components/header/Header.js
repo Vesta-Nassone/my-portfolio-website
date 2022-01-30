@@ -88,11 +88,12 @@ const Header = () => {
 				<div>
 					<ul className="card__socialIcons">
 						<li>
-							<IconButton className="social-icon-hover">
+							<IconButton className="social-icon-hover" aria-label="Twitter">
 								<a
 									href="https://twitter.com/NassoneVesta"
 									rel="noopener noreferrer"
 									target="_blank"
+
 								>
 									<FaTwitter size="2em" color="#1DA1F2" />
 								</a>
